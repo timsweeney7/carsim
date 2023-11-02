@@ -1,0 +1,18 @@
+PARSFILE
+search_path_append .
+search_path_append C:\CarSim_Database\ENPM667_test\
+search_path_append C:\Program Files (x86)\CarSim2023.2_Prog\Resources\
+search_path_append C:\Program Files (x86)\CarSim2023.2_Prog\
+search_path_append C:\Program Files (x86)\CarSim2023.2_Prog\Resources\Animator\Deprecated_Assets\
+set_run_slot 0
+DATASET C:\CarSim_Database\ENPM667_test\Results\Run_6cb07365-85a3-4a3b-95f9-c5c844687601\LastRun.vs
+PARSFILE C:\CarSim_Database\ENPM667_test\Results\Run_6cb07365-85a3-4a3b-95f9-c5c844687601\LastRun_all.par
+LIVE_SERVER_REMOVE_ALL
+SET_PATH_COLOR 1 1 1
+DISPLAY OFF
+ADD_REFERENCE_FRAME _TARGET_PATH_0_
+ADD_OBJ C:\CarSim_Database\ENPM667_test\Runs\Target_Path_0.obj
+SET_COLOR 0.4 0.4 1
+SET_OFFSET_Z 0.03
+SET_SPECULAR 0 0 0
+END

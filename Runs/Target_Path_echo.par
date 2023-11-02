@@ -3,10 +3,12 @@ PARSFILE
 ! Utility to calculate road and path coordinates for visualization
 ! Revision 208821, September 14, 2023
 
-TITLE DLC, Mu = 0.85 <Flat Test Pads>
+DATASET_TITLE Baseline
+CATEGORY * * Quick Start Guide Example
+TITLE Baseline <* * Quick Start Guide Example>
 
-! Echo: Roads\3D_Road\Road_c76ab0d9-60d9-4781-bd32-84e57bf8316e_echo.par
-! This run was made 21:03 on November 01, 2023.
+! Echo: Runs\Target_Path_echo.par
+! This run was made 21:05 on November 01, 2023.
 
 !------------------------------------------------------------------------------------
 ! SYSTEM PARAMETERS (SIMULATION OPTIONS)
@@ -16,6 +18,10 @@ TITLE DLC, Mu = 0.85 <Flat Test Pads>
 
 ID_EVENT            0 ; - ! ID number that can be assigned to the current event
 ID_RUN              0 ; - ! ID number that can be assigned to a simulation run
+IPRINT             50 ! Print interval: output time step TSTEP_WRITE = TSTEP*IPRINT;
+                      ! set IPRINT = 0 for debug (TSTEP_WRITE = T_DT) [L]
+! NOUT_ANI_LIVE     4 ! Number of variables sent live to animators (read only)
+! NOUT_WRITE        5 ! Number of output variables written to file (read only)
 OPT_ALL_WRITE       0 ! Write all outputs to file? 1 -> all, 0 -> only activated
                       ! outputs
 OPT_ECHO_DEFAULT    2 ! Show values that were not set by reading from a file? 1 ->
@@ -23,12 +29,19 @@ OPT_ECHO_DEFAULT    2 ! Show values that were not set by reading from a file? 1 
                       ! show the property at all
 OPT_ERROR_DIALOG    0 ! Show pop-up dialog box if fatal error occurs: 1 -> yes
                       ! (normal use), 0 -> no (for batch runs)
+OPT_STOP            1 ! Option for stopping the run: 0 -> stop when T reaches TSTOP;
+                      ! 1 -> stop when T reaches TSTOP or station reaches SSTOP; -1
+                      ! -> run until stopped using VS Commands or external control
+OPT_VS_FILETYPE     2 ! Type of output file: 1-> 64-bit VS, 2-> 32-bit VS, 3 ->
+                      ! 32-bit ERD, 4 -> text CSV (no binary), 0 -> no output file
 OPT_WRITE           0 ; - ! Write outputs when T > TSTART_WRITE? 1 -> write, 0 ->
                       ! don't write; change this using VS Commands or Events
-TSTART          10.04 ; s ! Starting time for the simulation clock
-TSTEP            0.04 ; s ! Time step for numerical integration [L]
-TSTOP         10.0396 ; s ! Stop when this time is reached
-! T_DT           0.04 ; s ! CALC -- Time increment between calculations
+TSTART              0 ; s ! Starting time for the simulation clock
+TSTART_WRITE        0 ; s ! Start writing outputs when this time is reached
+TSTEP          0.0005 ; s ! Time step for numerical integration [L]
+! TSTEP_WRITE   0.025 ; s ! CALC -- Time interval in output time-series file
+TSTOP              10 ; s ! Stop when this time is reached
+! T_DT         0.0005 ; s ! CALC -- Time increment between calculations
 
 !------------------------------------------------------------------------------------
 ! SYSTEM CONSTANTS
@@ -73,20 +86,56 @@ SEGMENT_ARC(1,1)  360 ; deg ! Central angle of arc
 
 ! NROAD             1 ! Number of installed road surfaces (read only)
 DEFINE_ROADS        1 ! VS Command to define road surfaces
+CURRENT_ROAD_ID     1 ! ROAD_ID for the vehicle during initialization [I]
 
 ROAD_PATH_ID(1)     1 ! PATH_ID of reference path used for this road [I]
 
 !------------------------------------------------------------------------------------
 ! START AND STOP INFORMATION FOR PATH
 !------------------------------------------------------------------------------------
+N_LTARG             1 ! Number of LTARG datasets that are used in this run
 PATH_ID_DM          1 ! PATH_ID of reference path for the driver and vehicle [I]
+LTARG_ID_DM         1 ! LTARG_ID of reference LTARG for the driver model (0 -> no
+                      ! reference LTARG) [I]
+OPT_INIT_PATH       1 ! Set Xo, Yo, and Yaw to match path PATH_ID_DM and target
+                      ! LTARG_ID_DM at station SSTART? 1 -> yes, 0 -> no [I]
 OPT_DIRECTION       1 ! Travel direction along path PATH_ID_DM: 0 -> set to 1 or -1
                       ! using SSTART and SSTOP values (legacy); 1 -> increasing
                       ! station, -1 -> decreasing station [I]
+SSTART              0 ; m ! Start the vehicle at this station on path PATH_ID_DM and
+                      ! possibly with target LTARG_ID_DM. The current station on
+                      ! this path is the output variable "Station", which is also a
+                      ! state variable. [I]
+SSTOP             210 ; m ! Use to set OPT_DIRECTION (if OPT_DIRECTION = 0); stop
+                      ! when the vehicle reaches this station (if OPT_STOP = 1)
 
 !------------------------------------------------------------------------------------
 ! CONFIGURABLE FUNCTIONS
 !------------------------------------------------------------------------------------
+
+! LTARG: Function that calculates lateral offset from station
+
+LTARG_ID(1)         1  ! User-defined ID number for this dataset
+
+! Col 1 = station (m), col 2 = lateral offset (m)
+LTARG_TABLE(1) SPLINE_FLAT ! spline interpolation, flat-line extrapolation
+ 70, 0
+ 75, 0.2
+ 80, 1.1
+ 85, 2.4
+ 90, 3.3
+ 95, 3.5
+ 100, 3.5
+ 105, 3.5
+ 110, 3.5
+ 115, 3.5
+ 120, 3.5
+ 125, 3.3
+ 130, 2.4
+ 135, 1.1
+ 140, 0.2
+ 145, 0
+ENDTABLE
 
 ! MU_ROAD: 2D function that calculates MU as a function of lateral position and
 ! station

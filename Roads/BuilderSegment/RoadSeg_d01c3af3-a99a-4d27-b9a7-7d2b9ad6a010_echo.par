@@ -3,10 +3,10 @@ PARSFILE
 ! Utility to calculate road and path coordinates for visualization
 ! Revision 208821, September 14, 2023
 
-TITLE DLC, Mu = 0.85 <Flat Test Pads>
+TITLE 100 m Radius <Circles>
 
-! Echo: Roads\3D_Road\Road_c76ab0d9-60d9-4781-bd32-84e57bf8316e_echo.par
-! This run was made 21:03 on November 01, 2023.
+! Echo: Roads\BuilderSegment\RoadSeg_d01c3af3-a99a-4d27-b9a7-7d2b9ad6a010_echo.par
+! This run was made 21:01 on November 01, 2023.
 
 !------------------------------------------------------------------------------------
 ! SYSTEM PARAMETERS (SIMULATION OPTIONS)
@@ -25,9 +25,7 @@ OPT_ERROR_DIALOG    0 ! Show pop-up dialog box if fatal error occurs: 1 -> yes
                       ! (normal use), 0 -> no (for batch runs)
 OPT_WRITE           0 ; - ! Write outputs when T > TSTART_WRITE? 1 -> write, 0 ->
                       ! don't write; change this using VS Commands or Events
-TSTART          10.04 ; s ! Starting time for the simulation clock
 TSTEP            0.04 ; s ! Time step for numerical integration [L]
-TSTOP         10.0396 ; s ! Stop when this time is reached
 ! T_DT           0.04 ; s ! CALC -- Time increment between calculations
 
 !------------------------------------------------------------------------------------
@@ -73,6 +71,7 @@ SEGMENT_ARC(1,1)  360 ; deg ! Central angle of arc
 
 ! NROAD             1 ! Number of installed road surfaces (read only)
 DEFINE_ROADS        1 ! VS Command to define road surfaces
+CURRENT_ROAD_ID     1 ! ROAD_ID for the vehicle during initialization [I]
 
 ROAD_PATH_ID(1)     1 ! PATH_ID of reference path used for this road [I]
 
@@ -91,18 +90,12 @@ OPT_DIRECTION       1 ! Travel direction along path PATH_ID_DM: 0 -> set to 1 or
 ! MU_ROAD: 2D function that calculates MU as a function of lateral position and
 ! station
 
-MU_ROAD_CONSTANT(1) 0.85 ; - ! MU component due to station
-MU_ROAD_COMBINE(1) ADD ! How to combine the two components
-MU_ROAD_L_CONSTANT(1) 0 ; - ! MU component due to lateral position
-
 ! ROAD_NEW_ID: Function that calculates ID from S
 
 ! ROAD_ZS: Function that calculates elevation from station
 
 ! RR_SURF: 2D function that calculates RR_SURF as a function of lateral position and
 ! station
-
-RR_SURF_CONSTANT(1) 1 ; - ! RR_SURF component due to station
 
 
 END
