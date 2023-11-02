@@ -1,0 +1,36 @@
+PARSFILE
+#FullDataName Plot: Setup`Testing_Tracking_Tim`Tracking
+
+ADD_ENTITY Plot
+
+#BlueLink2 CarSim Run Control`Baseline` * * Quick Start Guide Example` , example run`Run_6cb07365-85a3-4a3b-95f9-c5c844687601
+
+#CheckBox1 0    
+
+*README_FILE Results\Run_6cb07365-85a3-4a3b-95f9-c5c844687601\Run_out_tab.txt
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Testing_Tracking_Tim
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Tracking } Testing_Tracking_Tim
+#Library : Plot: Setup
+#DataSet : Testing_Tracking_Tim
+#Category: Tracking
+#FileID  : Plot_d4a28fb2-d6ba-4ec2-9734-7a15f06d3e74
+#Created : 11-01-2023 21:20:48
+#Modified: 11-01-2023 21:24:36
+#Product : CarSim 2023.2
+#DataVer : 2023.2
+#VehCode Plot Setup
+
+END

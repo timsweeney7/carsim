@@ -1,4 +1,4 @@
-Run made by CarSim 2023.2 at 21:54 on November 01, 2023.
+Run made by CarSim 2023.2 at 21:29 on November 01, 2023.
 Vehicle Configuration: 
 Started with simfile: simfile.sim
 
@@ -150,43 +150,26 @@ Used Dataset: Animator: Wheel Arrows and Other Indicators; { Tire Force Arrows (
 Used Dataset: Generic Data Group; { Tire Force Arrows } 2 Axle - Fx, Fy, Fz
 Used Dataset: Plot: Format; Default Plot Settings
 Used Dataset: Plot: Setup; { Tracking } Lateral Tracking vs. Station
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { Steering } Steering: Handwheel Angle
 Used Dataset: Plot: Format; Default Plot Settings
 Used Dataset: Plot: Setup; { Steering } Road Wheel Steer Angle - Front
 Used Dataset: Plot: Format; Default Plot Settings
 Used Dataset: Plot: Setup; { Tire Kinematics } Slip Angles: Instant
 Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { Vehicle Motion } Lateral Accel. of CG's vs. Time
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { Vehicle Motion } Roll Angle of Sprung Masses vs. Time
+Used Dataset: Plot: Format; Lines without Symbols
 Used Dataset: Plot: Setup; { Vehicle Motion } Yaw Rate of Sprung Masses vs. Time
 Used Dataset: Plot: Format; Default Plot Settings
-Used Dataset: Plot: Setup; { Vehicle Motion } Longitudinal Speed (Vxz_Fwd) vs. Time
+Used Dataset: Plot: Setup; { Tire Forces and Moments } Vertical Forces
 Used Dataset: Plot: Format; Default Plot Settings
-Used Dataset: Plot: Setup; { Tracking } Tracking XY #1
+Used Dataset: Plot: Setup; { Vehicle Motion } Longitudinal Speed (Vxz_Fwd) vs. Time
 Used Dataset: Procedures; { Handling Testing } DLC @ 120 km/h (Quick Start)
 Used Dataset: Animator: Shape File Link; { Geometric Shapes } Sphere: 0.1m Radius
 Used Dataset: Multiple Moving Objects; { Points of Interest } 1 Driver Preview Point
  Baseline <* * Quick Start Guide Example>
 Used Dataset: CarSim Run Control; { * * Quick Start Guide Example } Baseline
 
-Time to read input = 0.06508
-Function F_BOOST_R_TABLE extrapolated (out of range HIGH) for X = 176.505 N-m at T = 0
-Function F_REB_STOP_TABLE(1,1) extrapolated (out of range HIGH) for X = 0 mm at T = 0
-Function F_JNC_STOP_TABLE(1,1) extrapolated (out of range LOW) for X = 0 mm at T = 0
-Function F_REB_STOP_TABLE(1,2) extrapolated (out of range HIGH) for X = 0 mm at T = 0
-Function F_JNC_STOP_TABLE(1,2) extrapolated (out of range LOW) for X = 0 mm at T = 0
-Function F_REB_STOP_TABLE(2,1) extrapolated (out of range HIGH) for X = 0 mm at T = 0
-Function F_JNC_STOP_TABLE(2,1) extrapolated (out of range LOW) for X = 0 mm at T = 0
-Function F_REB_STOP_TABLE(2,2) extrapolated (out of range HIGH) for X = 0 mm at T = 0
-Function F_JNC_STOP_TABLE(2,2) extrapolated (out of range LOW) for X = 0 mm at T = 0
-
-Run started: VS output file = Results\Run_6cb07365-85a3-4a3b-95f9-c5c844687601\LastRun.vsb
-Function L_RELAX_X_FZ_TABLE(1,2) extrapolated (out of range HIGH) for X = 1.00001 N at T = 0.2165
-Function FS_EXT_TABLE(2,1) extrapolated (out of range LOW) for X = -50.0049 mm at T = 0.656
-Function FS_COMP_TABLE(2,1) extrapolated (out of range LOW) for X = -50.0049 mm at T = 0.656
-Function FY_TIRE_CARPET(1,1) extrapolated (out of range HIGH) for X = 26.0104 deg at T = 1.233
-Function MZ_TIRE_CARPET(1,1) extrapolated (out of range HIGH) for X = 26.0104 deg at T = 1.233
-Function FY_TIRE_CARPET(1,2) extrapolated (out of range HIGH) for X = 26.0047 deg at T = 1.4495
-Function MZ_TIRE_CARPET(1,2) extrapolated (out of range HIGH) for X = 26.0047 deg at T = 1.4495
-
-Run stopped at t = 8.605. Station limit reached: driver station = 210.009
-
-Computational time ratio: RTIME = 0.119852 (real time)/(simulation time)
-
+Time to read input = 0.0799252

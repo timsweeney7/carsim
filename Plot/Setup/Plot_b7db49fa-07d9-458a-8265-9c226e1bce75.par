@@ -1,0 +1,50 @@
+PARSFILE
+#FullDataName Plot: Setup`Testing XY Tracking`Tracking
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+#BlueLink0 Plot: Format`Default Plot Settings` ` , Plot format`PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862
+
+#CheckBox1 0    
+
+*README_FILE Results\Run_6cb07365-85a3-4a3b-95f9-c5c844687601\Run_out_tab.txt
+
+#MiscYellow0
+PLOTCHANNELS Yo, Xo, Test Legend
+
+#ENDMYellow
+
+YAXISLABEL Y location
+XAXISLABEL X location
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl4 3
+#RingCtrl6 3
+#RingCtrl8 1
+
+
+PTITLE Testing XY Tracking
+
+END_ENTITY Plot
+
+
+#EMBEDDED_NOTES
+#Attempting to create a dataset of plot information for XY tracking.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Tracking } Testing XY Tracking
+#Library : Plot: Setup
+#DataSet : Testing XY Tracking
+#Category: Tracking
+#FileID  : Plot_b7db49fa-07d9-458a-8265-9c226e1bce75
+#Created : 11-01-2023 21:28:18
+#Modified: 11-01-2023 21:31:40
+#Product : CarSim 2023.2
+#DataVer : 2023.2
+#VehCode Plot Setup
+
+END

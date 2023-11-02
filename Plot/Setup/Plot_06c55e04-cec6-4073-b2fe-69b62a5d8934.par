@@ -1,0 +1,33 @@
+PARSFILE
+#FullDataName Plot: Setup`Testing XY Position`Tracking
+
+ADD_ENTITY Plot
+
+#CheckBox1 0    
+
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Testing XY Position
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Tracking } Testing XY Position
+#Library : Plot: Setup
+#DataSet : Testing XY Position
+#Category: Tracking
+#FileID  : Plot_06c55e04-cec6-4073-b2fe-69b62a5d8934
+#Created : 11-01-2023 21:27:25
+#Modified: 11-01-2023 21:27:26
+#Product : CarSim 2023.2
+#DataVer : 2023.2
+#VehCode Plot Setup
+
+END

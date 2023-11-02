@@ -5091,45 +5091,6 @@ END_ENTITY Plot
 LOG_ENTRY Used Dataset: Plot: Setup; { Tracking } Lateral Tracking vs. Station
 EXIT_PARSFILE Plot\Setup\Plot_315ea46e-b7b6-40d8-84de-a7ef2624a470.par
 
-ENTER_PARSFILE Plot\Setup\Plot_076736e1-2cdd-49d5-8a36-d55940b011f0.par
-#FullDataName Plot: Setup`Steering: Handwheel Angle`Steering
-ADD_ENTITY Plot
-ENTER_PARSFILE Plot\Format\PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d.par
-#FullDataName Plot: Format`Lines without Symbols`
-LEGENDPERCENT 60
-TITLEFONTSIZE 10
-TITLELOCATION -1
-AXES Axes
-FRAME Frame
-GRID CourseGrid
-LEGENDDATA_1 RigidBodyName
-JUNK AutoLocation
-TITLEFONTSTYLE Regular
-TITLEFONTNAME Arial
-LEGENDFONTNAME Arial
-LEGENDFONTSIZE 10
-LEGENDFONTSTYLE Regular
-LABELFONTNAME Arial
-LABELFONTSIZE 10
-LABELFONTSTYLE Regular
-TICLABELFONTNAME Arial
-TICLABELFONTSIZE 10
-TICLABELFONTSTYLE Regular
-SYMBOLS 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-LINESTYL 1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1
-COLORS 8,2,3,7,4,0,6,14,8,9,10,11,12,13,14,6,1,2,0,4
-LOG_ENTRY Used Dataset: Plot: Format; Lines without Symbols
-EXIT_PARSFILE Plot\Format\PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d.par
-
-PLOTCHANNELS Steer_SW, Time
-WRT_STEER_SW
-YMaxmin Auto
-XMaxmin Auto
-PTITLE Steering: Handwheel Angle
-END_ENTITY Plot
-LOG_ENTRY Used Dataset: Plot: Setup; { Steering } Steering: Handwheel Angle
-EXIT_PARSFILE Plot\Setup\Plot_076736e1-2cdd-49d5-8a36-d55940b011f0.par
-
 ENTER_PARSFILE Plot\Setup\Plot_57fbe53b-9356-4cb1-9fd0-29f3e70d3894.par
 #FullDataName Plot: Setup`Road Wheel Steer Angle - Front`Steering
 ADD_ENTITY Plot
@@ -5214,88 +5175,6 @@ END_ENTITY Plot
 LOG_ENTRY Used Dataset: Plot: Setup; { Tire Kinematics } Slip Angles: Instant
 EXIT_PARSFILE Plot\Setup\Plot_3c5f8bac-e2f6-4ebc-ab48-a1828a269fd4.par
 
-ENTER_PARSFILE Plot\Setup\Plot_8b22f20a-1297-43cf-9e59-a0b1d530d136.par
-#FullDataName Plot: Setup`Lateral Accel. of CG's vs. Time`Vehicle Motion
-ADD_ENTITY Plot
-ENTER_PARSFILE Plot\Format\PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d.par
-#FullDataName Plot: Format`Lines without Symbols`
-LEGENDPERCENT 60
-TITLEFONTSIZE 10
-TITLELOCATION -1
-AXES Axes
-FRAME Frame
-GRID CourseGrid
-LEGENDDATA_1 RigidBodyName
-JUNK AutoLocation
-TITLEFONTSTYLE Regular
-TITLEFONTNAME Arial
-LEGENDFONTNAME Arial
-LEGENDFONTSIZE 10
-LEGENDFONTSTYLE Regular
-LABELFONTNAME Arial
-LABELFONTSIZE 10
-LABELFONTSTYLE Regular
-TICLABELFONTNAME Arial
-TICLABELFONTSIZE 10
-TICLABELFONTSTYLE Regular
-SYMBOLS 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-LINESTYL 1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1
-COLORS 8,2,3,7,4,0,6,14,8,9,10,11,12,13,14,6,1,2,0,4
-LOG_ENTRY Used Dataset: Plot: Format; Lines without Symbols
-EXIT_PARSFILE Plot\Format\PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d.par
-
-PLOTCHANNELS Ay, Time
-WRT_AY
-PLOTCHANNELS Ay_2, Time
-WRT_AY_2
-YMaxmin Auto
-XMaxmin Auto
-PTITLE Lateral Accel. of CG's vs. Time
-END_ENTITY Plot
-LOG_ENTRY Used Dataset: Plot: Setup; { Vehicle Motion } Lateral Accel. of CG's vs. Time
-EXIT_PARSFILE Plot\Setup\Plot_8b22f20a-1297-43cf-9e59-a0b1d530d136.par
-
-ENTER_PARSFILE Plot\Setup\Plot_2865bd77-14b2-4e51-9c7f-3484aa98e979.par
-#FullDataName Plot: Setup`Roll Angle of Sprung Masses vs. Time`Vehicle Motion
-ADD_ENTITY Plot
-ENTER_PARSFILE Plot\Format\PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d.par
-#FullDataName Plot: Format`Lines without Symbols`
-LEGENDPERCENT 60
-TITLEFONTSIZE 10
-TITLELOCATION -1
-AXES Axes
-FRAME Frame
-GRID CourseGrid
-LEGENDDATA_1 RigidBodyName
-JUNK AutoLocation
-TITLEFONTSTYLE Regular
-TITLEFONTNAME Arial
-LEGENDFONTNAME Arial
-LEGENDFONTSIZE 10
-LEGENDFONTSTYLE Regular
-LABELFONTNAME Arial
-LABELFONTSIZE 10
-LABELFONTSTYLE Regular
-TICLABELFONTNAME Arial
-TICLABELFONTSIZE 10
-TICLABELFONTSTYLE Regular
-SYMBOLS 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-LINESTYL 1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1
-COLORS 8,2,3,7,4,0,6,14,8,9,10,11,12,13,14,6,1,2,0,4
-LOG_ENTRY Used Dataset: Plot: Format; Lines without Symbols
-EXIT_PARSFILE Plot\Format\PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d.par
-
-PLOTCHANNELS Roll, Time
-WRT_ROLL
-PLOTCHANNELS Roll_2, Time
-WRT_ROLL_2
-YMaxmin Auto
-XMaxmin Auto
-PTITLE Roll Angle of Sprung Masses vs. Time
-END_ENTITY Plot
-LOG_ENTRY Used Dataset: Plot: Setup; { Vehicle Motion } Roll Angle of Sprung Masses vs. Time
-EXIT_PARSFILE Plot\Setup\Plot_2865bd77-14b2-4e51-9c7f-3484aa98e979.par
-
 ENTER_PARSFILE Plot\Setup\Plot_310b0189-b08d-49fc-a484-ee359eb89744.par
 #FullDataName Plot: Setup`Yaw Rate of Sprung Masses vs. Time`Vehicle Motion
 ADD_ENTITY Plot
@@ -5336,50 +5215,6 @@ PTITLE Yaw Rate of Sprung Masses vs. Time
 END_ENTITY Plot
 LOG_ENTRY Used Dataset: Plot: Setup; { Vehicle Motion } Yaw Rate of Sprung Masses vs. Time
 EXIT_PARSFILE Plot\Setup\Plot_310b0189-b08d-49fc-a484-ee359eb89744.par
-
-ENTER_PARSFILE Plot\Setup\Plot_a146934a-339c-4983-9664-0f9749a0dfd6.par
-#FullDataName Plot: Setup`Vertical Forces`Tire Forces and Moments
-ADD_ENTITY Plot
-ENTER_PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
-#FullDataName Plot: Format`Default Plot Settings`
-LEGENDPERCENT 60
-TITLEFONTSIZE 10
-TITLELOCATION -1
-AXES Axes
-FRAME Frame
-GRID CourseGrid
-LEGENDDATA_1 RigidBodyName
-TITLEFONTSTYLE Regular
-TITLEFONTNAME Arial
-LEGENDFONTNAME Arial
-LEGENDFONTSIZE 10
-LEGENDFONTSTYLE Regular
-LABELFONTNAME Arial
-LABELFONTSIZE 10
-LABELFONTSTYLE Regular
-TICLABELFONTNAME Arial
-TICLABELFONTSIZE 10
-TICLABELFONTSTYLE Regular
-SYMBOLS 10,1,2,3,4,5,6,7,8,9,10,4,1,2,3,4,5,6,7,8
-LINESTYL 1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1
-COLORS 8,2,3,11,4,0,6,14,8,7,10,8,12,13,14,6,1,2,0,4
-LOG_ENTRY Used Dataset: Plot: Format; Default Plot Settings
-EXIT_PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
-
-PLOTCHANNELS Fz_L1, Time
-WRT_FZ_L1
-PLOTCHANNELS Fz_R1, Time
-WRT_FZ_R1
-PLOTCHANNELS Fz_L2, Time
-WRT_FZ_L2
-PLOTCHANNELS Fz_R2, Time
-WRT_FZ_R2
-YMaxmin Auto
-XMaxmin Auto
-PTITLE Vertical Forces
-END_ENTITY Plot
-LOG_ENTRY Used Dataset: Plot: Setup; { Tire Forces and Moments } Vertical Forces
-EXIT_PARSFILE Plot\Setup\Plot_a146934a-339c-4983-9664-0f9749a0dfd6.par
 
 ENTER_PARSFILE Plot\Setup\Plot_a243fc1c-fc6b-4404-89ac-bc8209a293be.par
 #FullDataName Plot: Setup`Longitudinal Speed (Vxz_Fwd) vs. Time`Vehicle Motion
@@ -5425,6 +5260,47 @@ END_ENTITY Plot
 LOG_ENTRY Used Dataset: Plot: Setup; { Vehicle Motion } Longitudinal Speed (Vxz_Fwd) vs. Time
 EXIT_PARSFILE Plot\Setup\Plot_a243fc1c-fc6b-4404-89ac-bc8209a293be.par
 
+ENTER_PARSFILE Plot\Setup\Plot_cbc2bc1a-a0f7-4875-bfa1-78dfc8eab0e5.par
+#FullDataName Plot: Setup`Tracking XY #1`Tracking
+ADD_ENTITY Plot
+ENTER_PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+#FullDataName Plot: Format`Default Plot Settings`
+LEGENDPERCENT 60
+TITLEFONTSIZE 10
+TITLELOCATION -1
+AXES Axes
+FRAME Frame
+GRID CourseGrid
+LEGENDDATA_1 RigidBodyName
+TITLEFONTSTYLE Regular
+TITLEFONTNAME Arial
+LEGENDFONTNAME Arial
+LEGENDFONTSIZE 10
+LEGENDFONTSTYLE Regular
+LABELFONTNAME Arial
+LABELFONTSIZE 10
+LABELFONTSTYLE Regular
+TICLABELFONTNAME Arial
+TICLABELFONTSIZE 10
+TICLABELFONTSTYLE Regular
+SYMBOLS 10,1,2,3,4,5,6,7,8,9,10,4,1,2,3,4,5,6,7,8
+LINESTYL 1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1
+COLORS 8,2,3,11,4,0,6,14,8,7,10,8,12,13,14,6,1,2,0,4
+LOG_ENTRY Used Dataset: Plot: Format; Default Plot Settings
+EXIT_PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+
+PLOTCHANNELS Yo, Xo
+WRT_YO
+WRT_XO
+YAXISLABEL Yo
+XAXISLABEL Xo
+YMaxmin Auto
+XMaxmin Auto
+PTITLE Tracking XY #1
+END_ENTITY Plot
+LOG_ENTRY Used Dataset: Plot: Setup; { Tracking } Tracking XY #1
+EXIT_PARSFILE Plot\Setup\Plot_cbc2bc1a-a0f7-4875-bfa1-78dfc8eab0e5.par
+
 LOG_ENTRY Used Dataset: Procedures; { Handling Testing } DLC @ 120 km/h (Quick Start)
 EXIT_PARSFILE Procedures\Proc_3ae0353d-bd7c-43a3-9da4-150b6952a10e.par
 
@@ -5445,7 +5321,7 @@ ROAD_ID_OBJ 0
 OPT_RECYCLE_OBJ 0
 H_OBJ = 0 ! Default for blank field
 WRITE_ADD_REFERENCE_FRAME_OBJECT
-ADD_REFERENCE_FRAME object_1a
+ADD_REFERENCE_FRAME object_1e
 SET_EULER_ANGLES YAW_PITCH_ROLL
 SET_X_NAME X_Obj_1
 WRT_X_Obj_1

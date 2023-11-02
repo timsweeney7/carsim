@@ -1,0 +1,33 @@
+PARSFILE
+#FullDataName Plot: Setup`Tracking XY`Tracking
+
+ADD_ENTITY Plot
+
+#CheckBox1 0    
+
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Tracking XY
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Tracking } Tracking XY
+#Library : Plot: Setup
+#DataSet : Tracking XY
+#Category: Tracking
+#FileID  : Plot_ef0cc53c-56bd-42a6-a9af-0fb85ec1dfe6
+#Created : 11-01-2023 21:38:23
+#Modified: 11-01-2023 21:38:24
+#Product : CarSim 2023.2
+#DataVer : 2023.2
+#VehCode Plot Setup
+
+END
