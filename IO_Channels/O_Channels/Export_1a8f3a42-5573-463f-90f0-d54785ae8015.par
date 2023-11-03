@@ -1,0 +1,34 @@
+PARSFILE
+#FullDataName I/O Channels: Export`Pos, Vel, Yaw`Vehicle Parameters
+#RingCtrl0 0
+#RingCtrl1 1
+*README_FILE Results\Run_6cb07365-85a3-4a3b-95f9-c5c844687601\Run_out_tab.txt
+
+
+EXPORT AVz
+EXPORT Xo
+EXPORT Yo
+EXPORT Vxz_Fwd
+#MiscYellow0
+#Number of Selected Channels: 4
+#CHN_NAME: AVz
+#CHN_NAME: Xo
+#CHN_NAME: Yo
+#CHN_NAME: Vxz_Fwd
+#ENDMYellow
+
+#BlueLink0 CarSim Run Control`Baseline` * * Quick Start Guide Example` , example run`Run_6cb07365-85a3-4a3b-95f9-c5c844687601
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Export; { Vehicle Parameters } Pos, Vel, Yaw
+#Library : I/O Channels: Export
+#DataSet : Pos, Vel, Yaw
+#Category: Vehicle Parameters
+#FileID  : Export_1a8f3a42-5573-463f-90f0-d54785ae8015
+#Created : 11-02-2023 21:22:36
+#Modified: 11-02-2023 21:49:46
+#Product : CarSim 2023.2
+#DataVer : 2023.2
+#VehCode Export Channels
+
+END

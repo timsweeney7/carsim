@@ -8,8 +8,8 @@ DATASET_TITLE Baseline
 CATEGORY * * Quick Start Guide Example
 TITLE Baseline <* * Quick Start Guide Example>
 
-! Echo: Results\Run_6cb07365-85a3-4a3b-95f9-c5c844687601\LastRun_echo.par
-! This run was made 22:00 on November 01, 2023.
+! Echo: C:\CarSim_Database\ENPM667_test\Results\Run_6cb07365-85a3-4a3b-95f9-c5c844687601\LastRun_echo.par
+! This run was made 22:03 on November 02, 2023.
 
 !------------------------------------------------------------------------------------
 ! SYSTEM PARAMETERS (SIMULATION OPTIONS)
@@ -23,7 +23,9 @@ ID_RUN              0 ; - ! ID number that can be assigned to a simulation run
 IPRINT             50 ! Print interval: output time step TSTEP_WRITE = TSTEP*IPRINT;
                       ! set IPRINT = 0 for debug (TSTEP_WRITE = T_DT) [L]
 NDIGITS_ECHO       10 ! [D] Max. no. of digits for printing floating-point numbers
+! NIMPORT           0 ! Number of activated import variables (read only)
 ! NOUT_ANI_LIVE    71 ! Number of variables sent live to animators (read only)
+! NOUT_EXPORT       4 ! Number of activated export variables (read only)
 ! NOUT_WRITE      690 ! Number of output variables written to file (read only)
 OPT_ALL_WRITE       1 ! Write all outputs to file? 1 -> all, 0 -> only activated
                       ! outputs
@@ -65,6 +67,7 @@ OPT_LOG_VERBOSE     2 ! [D] Log file verbosity: 2 -> errors + most events + pars
                       ! names, 0 -> errors only, 1 -> errors + events, 3 ->
                       ! advanced diagnostics
 OPT_LOG_WARNINGS    1 ! [D] Write warnings into log file? 1 -> yes, 0 -> no
+OPT_MULTI_WRAPPERS  0 ! [D] Use more than one external wrappers? 0 -> no, 1 -> yes
 OPT_PAUSE           0 ! [D] Pause at end of run with window open? 0 -> no, 1 -> yes
 OPT_SKIP_INIT_DYN   0 ! [D] Skip initial dynamic calculations (for some RT systems)?
                       ! 0 -> no, 1 -> yes
@@ -76,7 +79,7 @@ OPT_VS_FILETYPE     2 ! Type of output file: 1-> 64-bit VS, 2-> 32-bit VS, 3 ->
                       ! 32-bit ERD, 4 -> text CSV (no binary), 0 -> no output file
 OPT_WRITE           1 ; - ! [D] Write outputs when T > TSTART_WRITE? 1 -> write, 0
                       ! -> don't write; change this using VS Commands or Events
-! RTIME  0.1218384544 ; - ! CALC -- Computational efficiency (sec/sim. sec)
+! RTIME  0.3665310633 ; - ! CALC -- Computational efficiency (sec/sim. sec)
 TSTART          8.605 ; s ! Starting time for the simulation clock
 TSTART_T_EVENT      0 ; s ! [D] Event clock reset time: T_EVENT = T - TSTART_T_EVENT
 TSTART_WRITE    8.605 ; s ! Start writing outputs when this time is reached
@@ -84,6 +87,21 @@ TSTEP          0.0005 ; s ! Time step for numerical integration [L]
 ! TSTEP_WRITE   0.025 ; s ! CALC -- Time interval in output time-series file
 TSTOP              10 ; s ! Stop when this time is reached
 ! T_DT         0.0005 ; s ! CALC -- Time increment between calculations
+
+!------------------------------------------------------------------------------------
+! VS CONNECT SERVER PARAMETERS
+!------------------------------------------------------------------------------------
+VSC_OPT_ENABLE_SERVER 0 ! 0 -> Disable VS Connect server. 1 -> Enable VS Connect
+                        ! server.
+VSC_HOST_PORT       0 ! I.P. port for VS Connect server Node. 0 -> Use default.
+VSC_MIN_CONNECTIONS 0 ! Minimum required VS Connect connections.
+VSC_DESIRED_CONNECTIONS 0 ! Desired number of connections for simulation to begin.
+VSC_STARTUP_TIMEOUT_MS 5000 ! Number of milliseconds to wait for VSC_MIN_CONNECTIONS
+                            ! and VSC_DESIRED_CONNECTIONS connections before
+                            ! starting simulation.
+VSC_MAX_CONNECTIONS 3 ! Maximum VS Connect connections permitted.
+VSC_SHUTDOWN_TIMEOUT_MS 1500 ! Approximate time (in milliseconds) allowed for
+                             ! processing disconnection.
 
 !------------------------------------------------------------------------------------
 ! SYSTEM CONSTANTS
@@ -5741,9 +5759,9 @@ SV_IVERR  29.16271826 ; m ! ODE: Integral of SC speed error {Vx_IErr}
 SV_I_GEAR_SHIFT  0.04 ; kg-m2 ! Transmission gear inertia modulated by shift
 SV_I_GEAR_SHIFT_START 0.04 ; kg-m2 ! Gear spin inertia when automatic shift started
 SV_JNCR_L1 0.0001263670859 ; m/s ! ODE: Jounce rate at wheel L1
-SV_JNCR_L2 -8.114488688e-08 ; m/s ! ODE: Jounce rate at wheel L2
+SV_JNCR_L2 -8.114488879e-08 ; m/s ! ODE: Jounce rate at wheel L2
 SV_JNCR_R1 0.000189073241 ; m/s ! ODE: Jounce rate at wheel R1
-SV_JNCR_R2 5.286311013e-05 ; m/s ! ODE: Jounce rate at wheel R2
+SV_JNCR_R2 5.286311014e-05 ; m/s ! ODE: Jounce rate at wheel R2
 SV_JNC_L1 -0.03841460368 ; m ! ODE: Jounce movement at wheel L1
 SV_JNC_L2 -0.04895618066 ; m ! ODE: Jounce movement at wheel L2
 SV_JNC_R1 0.04142646287 ; m ! ODE: Jounce movement at wheel R1
@@ -5835,7 +5853,7 @@ SV_STA_ROAD 210.008786 ; m ! Vehicle station on road CURRENT_ROAD_ID {Sta_Road}
 SV_STR_DM 29.21520785 ; deg ! Road-wheel steer from driver model
 SV_STR_DM_OLD 76.6285363 ; deg ! Road-wheel steer from driver model (prev. time
                          ! step)
-SV_STR_IN_DGR_A1 -4.913368854e-05 ; - ! ODE: Steering gear input rate, axle 1
+SV_STR_IN_DGR_A1 -4.913368936e-05 ; - ! ODE: Steering gear input rate, axle 1
 SV_STR_IN_DGR_A2    0 ; - ! ODE: Steering gear input rate, axle 2
 SV_STR_IN_GR_A1 9.387798556 ; - ! ODE: Steering gear input position, axle 1
                             ! {A_StrIn1}
@@ -5887,6 +5905,14 @@ SV_Z_CTC_L2        -0 ; m ! Center of tire contact L2 {Zgnd_L2}
 SV_Z_CTC_R1 5.551115123e-17 ; m ! Center of tire contact R1 {Zgnd_R1}
 SV_Z_CTC_R2        -0 ; m ! Center of tire contact R2 {Zgnd_R2}
 SV_Z_GND            0 ; m ! Z coord, ground, vehicle aero ref. pt (saved)
+
+!------------------------------------------------------------------------------------
+! EXPORTED VARIABLES
+!------------------------------------------------------------------------------------
+EXPORT AVZ 15.10832908 ! #1. Yaw rate (body-fixed), vehicle (deg/s)
+EXPORT XO   127.16748 ! #2. X coordinate, vehicle origin (m)
+EXPORT YO  174.388617 ! #3. Y coordinate, vehicle origin (m)
+EXPORT VXZ_FWD 95.67861608 ! #4. Longitudinal speed in XZ plane (km/h)
 
 
 END

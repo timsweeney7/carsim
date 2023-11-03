@@ -23,6 +23,22 @@ IUNIT 0
 IVEHICLE 0
 OPT_INT_METHOD 0
 OPT_VS_FILETYPE 2
+ENTER_PARSFILE Models\Simulink\Simlink_5a88dfd3-1363-48df-8bd2-cef1e96a0bee.par
+#FullDataName Models: Simulink`Connection 1`Simulink
+SIMULINK_MODEL_FILE Simulink\ENPM667_Midterm.slx
+OPT_INT_METHOD 0
+OPT_IO_SYNC_FM 1
+tstep 0.0005
+iprint 50
+ENTER_PARSFILE IO_Channels\O_Channels\Export_1a8f3a42-5573-463f-90f0-d54785ae8015.par
+#FullDataName I/O Channels: Export`Pos, Vel, Yaw`Vehicle Parameters
+LOG_ENTRY Used Dataset: I/O Channels: Export; { Vehicle Parameters } Pos, Vel, Yaw
+EXIT_PARSFILE IO_Channels\O_Channels\Export_1a8f3a42-5573-463f-90f0-d54785ae8015.par
+
+LIVE_SERVER_UPDATE_FREQ_MAX 60
+LOG_ENTRY Used Dataset: Models: Simulink; { Simulink } Connection 1
+EXIT_PARSFILE Models\Simulink\Simlink_5a88dfd3-1363-48df-8bd2-cef1e96a0bee.par
+
 ENTER_PARSFILE Animator\Cameras\Camera_32ea6678-907c-4a10-af4b-b9431e3d2f8a.par
 #FullDataName Animator: Camera Setup`13 Azm, 9 El, 18 m, No Yaw`Vehicle Reference
 SET_CAMERA_REFERENCE_FRAME Frame_d2b5165c-cec2-4d4b-a319-0d7cf12b8f0d
@@ -5374,6 +5390,11 @@ NUM_CACHED_RUNS 1
 LOG_ENTRY Used Dataset: CarSim Run Control; { * * Quick Start Guide Example } Baseline
 EXIT_PARSFILE Runs\Run_6cb07365-85a3-4a3b-95f9-c5c844687601.par
 
+EXPORT AVz
+EXPORT Xo
+EXPORT Yo
+EXPORT Vxz_Fwd
+PORTS_EXP 1,4
 
 
 END

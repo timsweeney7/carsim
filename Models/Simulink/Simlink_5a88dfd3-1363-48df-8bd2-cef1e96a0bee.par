@@ -10,8 +10,21 @@ SIMULINK_MODEL_FILE Simulink\ENPM667_Midterm.slx
 *USE_ALT_DIR 0
 #CheckBox1 0    
 *USE_DIFF_SOLVERS 0
-#CheckBox3 0    
+#CheckBox3 1    
 #CheckBox5 0    
+#RingCtrl1 0
+OPT_INT_METHOD 0
+#CheckBox4 1    
+OPT_IO_SYNC_FM 1
+*TSTEP 0.0005
+*FREQ_MODEL 2000
+*TSTEP_OUT 0.025
+*FREQ_OUT 40
+tstep 0.0005
+iprint 50
+PARSFILE IO_Channels\O_Channels\Export_1a8f3a42-5573-463f-90f0-d54785ae8015.par
+#BlueLink1 I/O Channels: Export`Pos, Vel, Yaw` Vehicle Parameters` , Import/Export`Export_1a8f3a42-5573-463f-90f0-d54785ae8015
+
 #BlueLink3 I/O Channels: Ports` ` , vs_state Ports` , vs_state Ports`
 
 #BlueLink4 I/O Channels: Ports` ` , vs_ctl Ports` , vs_ctl Ports`
@@ -20,6 +33,7 @@ SIMULINK_MODEL_FILE Simulink\ENPM667_Midterm.slx
 
 #BlueLink6 I/O Channels: Ports` ` , vs_dyn Ports` , vs_dyn Ports`
 
+LIVE_SERVER_UPDATE_FREQ_MAX 60
 
 LOG_ENTRY Used Dataset: Models: Simulink; { Simulink } Connection 1
 #Library : Models: Simulink
@@ -27,7 +41,7 @@ LOG_ENTRY Used Dataset: Models: Simulink; { Simulink } Connection 1
 #Category: Simulink
 #FileID  : Simlink_5a88dfd3-1363-48df-8bd2-cef1e96a0bee
 #Created : 11-02-2023 19:46:38
-#Modified: 11-02-2023 21:03:46
+#Modified: 11-02-2023 21:22:38
 #Product : CarSim 2023.2
 #DataVer : 2023.2
 #VehCode 

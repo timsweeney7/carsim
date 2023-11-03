@@ -2,10 +2,10 @@
   "VsChannelGroup" : {
     "Category" : "* * Quick Start Guide Example",
     "Dataset" : "Baseline",
-    "Input File" : "Results\\Run_6cb07365-85a3-4a3b-95f9-c5c844687601\\LastRun.vs",
+    "Input File" : "C:\\CarSim_Database\\ENPM667_test\\Results\\Run_6cb07365-85a3-4a3b-95f9-c5c844687601\\LastRun.vs",
     "Model" : "Vehicle Configuration: I_I",
     "Product" : "CarSim 2023.2",
-    "Timestamp" : "22:00 on November 01, 2023",
+    "Timestamp" : "22:03 on November 02, 2023",
     "Title" : "Baseline <* * Quick Start Guide Example>",
     "Version" : 2,
     "XLabel" : "Time",
