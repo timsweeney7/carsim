@@ -23,6 +23,12 @@ IUNIT 0
 IVEHICLE 0
 OPT_INT_METHOD 0
 OPT_VS_FILETYPE 2
+ENTER_PARSFILE Models\Simulink\Simlink_5a88dfd3-1363-48df-8bd2-cef1e96a0bee.par
+#FullDataName Models: Simulink`Connection 1`Simulink
+SIMULINK_MODEL_FILE Simulink\ENPM667_Midterm.slx
+LOG_ENTRY Used Dataset: Models: Simulink; { Simulink } Connection 1
+EXIT_PARSFILE Models\Simulink\Simlink_5a88dfd3-1363-48df-8bd2-cef1e96a0bee.par
+
 ENTER_PARSFILE Animator\Cameras\Camera_32ea6678-907c-4a10-af4b-b9431e3d2f8a.par
 #FullDataName Animator: Camera Setup`13 Azm, 9 El, 18 m, No Yaw`Vehicle Reference
 SET_CAMERA_REFERENCE_FRAME Frame_d2b5165c-cec2-4d4b-a319-0d7cf12b8f0d
@@ -4159,20 +4165,20 @@ OPT_DM 3
 INSTALL_DM_IMPORTS
 LTARG_TABLE SPLINE_FLAT
 70, 0
-75, 0.2
-80, 1.1
-85, 2.4
-90, 3.3
-95, 3.5
-100, 3.5
-105, 3.5
-110, 3.5
-115, 3.5
-120, 3.5
-125, 3.3
-130, 2.4
-135, 1.1
-140, 0.2
+75, 0
+80, 0
+85, 0
+90, 0
+95, 0
+100, 0
+105, 0
+110, 0
+115, 0
+120, 0
+125, 0
+130, 0
+135, 0
+140, 0
 145, 0
 ENDTABLE
 SET_PATH_WIDTH 0.1
@@ -5321,7 +5327,7 @@ ROAD_ID_OBJ 0
 OPT_RECYCLE_OBJ 0
 H_OBJ = 0 ! Default for blank field
 WRITE_ADD_REFERENCE_FRAME_OBJECT
-ADD_REFERENCE_FRAME object_1d
+ADD_REFERENCE_FRAME object_1a
 SET_EULER_ANGLES YAW_PITCH_ROLL
 SET_X_NAME X_Obj_1
 WRT_X_Obj_1

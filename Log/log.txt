@@ -1,87 +1,19 @@
-2023-11-01T21:18:12 Logfile initialized.
-2023-11-01T21:18:12 (Info):    CarSim 2023.2
-2023-11-01T21:18:12 (Info):    -
-2023-11-01T21:18:12 (Info):    command-line: 
-2023-11-01T21:18:12 (Info):    -
-2023-11-01T21:18:12 (Info):    Working Dir: C:\CarSim_Database\ENPM667_test\
-2023-11-01T21:18:12 (Info):    Program Dir: C:\Program Files (x86)\CarSim2023.2_Prog\
-2023-11-01T21:18:12 (Info):    -
-2023-11-01T21:18:12 (Info):    OS Version:        6.2 (build 9200)
-2023-11-01T21:18:12 (Info):    CPU Architecture:  x64
-2023-11-01T21:18:12 (Info):    CPU Count:         8
-2023-11-01T21:18:12 (Info):    CPU Level/Rev:     6/15363
-2023-11-01T21:18:12 (Info):    Start Mem Total:   8122 MB
-2023-11-01T21:18:12 (Info):    Start Mem Used:    66%
-2023-11-01T21:18:12 (Info):    -
-2023-11-01T21:18:12 (Info):    Loaded dataset index cache in 0.00s, 0.6 megabytes.
-2023-11-01T21:18:12 (Info):    Feature                  Source                       Version  Acquired  Count
-2023-11-01T21:18:12 (Info):    -----------------        -----------------            -------  --------  -----
-2023-11-01T21:18:12 (Info):    carsimus                 C:\FLEXlm                    2023     [   ]          
-2023-11-01T21:18:12 (Info):    carsimfus                C:\FLEXlm                    2023     [   ]          
-2023-11-01T21:18:12 (Info):    carsimsguius             C:\FLEXlm                    2023     [   ]          
-2023-11-01T21:18:14 (Info):    Acquired [1] license for carsimsguius
-2023-11-01T21:18:14 (Info):    Acquired [1] license for carsimus
-2023-11-01T21:18:14 (Info):    Acquired [1] license for carsimfus
-2023-11-01T21:18:14 (Info):    License check took 1.84 seconds.
-2023-11-01T21:18:14 (Info):    No install ID found at regkey "Software\Mechanical Simulation Corp\CarSim 2023.2".
-2023-11-01T21:18:14 (Info):    No install ID found at regkey "Software\Mechanical Simulation Corp\CarSim 2023.2".
-2023-11-01T21:18:15 (Info):    Initial setup took 0.86 seconds.
-2023-11-01T21:18:15 (Info):    Auto updates took 0.00 seconds.
-2023-11-01T21:18:16 (Info):    Loaded last screen in 0.66 seconds.
-2023-11-01T21:18:16 (Info):    Total init time 3.59 seconds.
-2023-11-01T21:20:48 (Info):    Dataset created in "Plot\Setup\": { Tracking } Testing_Tracking_Tim (UUID: Plot_d4a28fb2-d6ba-4ec2-9734-7a15f06d3e74).
-2023-11-01T21:27:25 (Info):    Dataset created in "Plot\Setup\": { Tracking } Testing XY Position (UUID: Plot_06c55e04-cec6-4073-b2fe-69b62a5d8934).
-2023-11-01T21:28:18 (Info):    Dataset created in "Plot\Setup\": { Tracking } Testing XY Tracking (UUID: Plot_b7db49fa-07d9-458a-8265-9c226e1bce75).
-2023-11-01T21:38:23 (Info):    Dataset created in "Plot\Setup\": { Tracking } Tracking XY (UUID: Plot_ef0cc53c-56bd-42a6-a9af-0fb85ec1dfe6).
-2023-11-01T21:39:35 (Info):    Dataset created in "Plot\Setup\": { Tracking } Tracking XY #1 (UUID: Plot_cbc2bc1a-a0f7-4875-bfa1-78dfc8eab0e5).
-2023-11-01T21:44:47 (Info):    Error: The selected file is not a valid Expanded Parsfile. It will not be imported.
-2023-11-01T21:45:54 (Info):    Error: The selected file is not a valid Expanded Parsfile. It will not be imported.
-2023-11-01T21:46:48 (Info):    Created temp directory: C:\Users\Tim\AppData\Local\Temp\CarSim_SaveAs\411ac632-b3fb-4c12-8431-8bba0663b0cf
-2023-11-01T21:46:48 (Info):    Initialize creation of CPAR: C:\CarSim_Database\ENPM667_test\Plot\Setup\Plot_ Setup.cpar
-2023-11-01T21:46:48 (Info):    Generating export file C:\Users\Tim\AppData\Local\Temp\CarSim_SaveAs\411ac632-b3fb-4c12-8431-8bba0663b0cf\temp.par
-2023-11-01T21:46:48 (Info):    ----------------------------------
-2023-11-01T21:46:48 (Info):    * Generating include list
-2023-11-01T21:46:48 (Info):    Processing: file Plot\Setup\Plot_ef0cc53c-56bd-42a6-a9af-0fb85ec1dfe6.par
-2023-11-01T21:46:48 (Info):    * Writing output file
-2023-11-01T21:46:48 (Info):    ----------------------------------
-2023-11-01T21:46:48 (Info):    ----------------------------------
-2023-11-01T21:46:48 (Info):    Finished generating export file "C:\Users\Tim\AppData\Local\Temp\CarSim_SaveAs\411ac632-b3fb-4c12-8431-8bba0663b0cf\temp.par".
-2023-11-01T21:46:48 (Info):        Included 1 files, 0.6 kb.
-2023-11-01T21:46:48 (Info):        It took 0.3 seconds.
-2023-11-01T21:46:48 (Info):    ----------------------------------
-2023-11-01T21:46:49 (Info):    Generating include list for CPar.
-2023-11-01T21:46:49 (Info):    Finished generating include list for CPar.
-2023-11-01T21:46:49 (Info):    Creating CPar: C:\CarSim_Database\ENPM667_test\Plot\Setup\Plot_ Setup.cpar
-2023-11-01T21:46:49 (Info):    Removing temp directory: "C:\Users\Tim\AppData\Local\Temp\CarSim_SaveAs\411ac632-b3fb-4c12-8431-8bba0663b0cf".
-2023-11-01T21:47:05 (Info):    Created temp directory: C:\Users\Tim\AppData\Local\Temp\CarSim_SaveAs\80631e24-5407-4fe2-ace1-aabaad1ade45
-2023-11-01T21:47:09 (Info):    ----------------------------------
-2023-11-01T21:47:09 (Info):    Starting import preview...
-2023-11-01T21:47:09 (Info):    Skip File, Plot\Setup\Plot_ef0cc53c-56bd-42a6-a9af-0fb85ec1dfe6.par, Blocked, Plot: Setup, Tracking, Tracking XY
-2023-11-01T21:47:10 (Info):    Indexed whole database in 0.08s
-2023-11-01T21:47:10 (Info):    Completed import preview, mapped 1 items. Would have:
-2023-11-01T21:47:10 (Info):        [Imported 0 files, skipped 1.]
-2023-11-01T21:47:10 (Info):        [It took 0.3 seconds.]
-2023-11-01T21:47:10 (Info):    ----------------------------------
-2023-11-01T21:47:13 (Info):    ----------------------------------
-2023-11-01T21:47:13 (Info):    Performing an import based on previously generated import preview...
-2023-11-01T21:47:13 (Info):    Skipped: Skip File, Plot\Setup\Plot_ef0cc53c-56bd-42a6-a9af-0fb85ec1dfe6.par, UUID & Name, Plot: Setup, Tracking, Tracking XY
-2023-11-01T21:47:13 (Info):    Indexed whole database in 0.06s
-2023-11-01T21:47:13 (Info):    Import completed.
-2023-11-01T21:47:13 (Info):        Imported 0 files, skipped 1.
-2023-11-01T21:47:13 (Info):        It took 0.1 seconds to import.
-2023-11-01T21:47:13 (Info):    ----------------------------------
-2023-11-01T21:47:13 (Info):    Starting import of Consolidated Parsfile "C:\CarSim_Database\ENPM667_test\Plot\Setup\Plot_ Setup.cpar"...
-2023-11-01T21:49:14 (Info):    Removing temp directory: "C:\Users\Tim\AppData\Local\Temp\CarSim_SaveAs\80631e24-5407-4fe2-ace1-aabaad1ade45".
-2023-11-01T21:52:11 (Info):    Running math model for: { * * Quick Start Guide Example } Baseline
-2023-11-01T21:52:11 (Info):    Math model run completed.
-2023-11-01T21:52:15 (Info):    Assembling animation...
-2023-11-01T21:52:17 (Info):    Animation assembly finished.
-2023-11-01T21:54:11 (Info):    Running math model for: { * * Quick Start Guide Example } Baseline
-2023-11-01T21:54:12 (Info):    Math model run completed.
-2023-11-01T21:54:28 (Info):    Assembling animation...
-2023-11-01T21:54:31 (Info):    Animation assembly finished.
-2023-11-01T21:55:15 (Info):    121 index cache entries written in 0.015s
-2023-11-01T21:55:16 (Info):    Released [1] license for carsimsguius
-2023-11-01T21:55:16 (Info):    Released [1] license for carsimus
-2023-11-01T21:55:16 (Info):    Released [1] license for carsimfus
-2023-11-01T21:55:16 (Info):    Exiting application...
+2023-11-02T21:02:44 Logfile initialized.
+2023-11-02T21:02:44 (Info):    CarSim 2023.2
+2023-11-02T21:02:44 (Info):    -
+2023-11-02T21:02:44 (Info):    command-line: 
+2023-11-02T21:02:44 (Info):    -
+2023-11-02T21:02:44 (Info):    Working Dir: C:\CarSim_Database\ENPM667_test\
+2023-11-02T21:02:44 (Info):    Program Dir: C:\Program Files (x86)\CarSim2023.2_Prog\
+2023-11-02T21:02:44 (Info):    -
+2023-11-02T21:02:44 (Info):    OS Version:        6.2 (build 9200)
+2023-11-02T21:02:44 (Info):    CPU Architecture:  x64
+2023-11-02T21:02:44 (Info):    CPU Count:         8
+2023-11-02T21:02:44 (Info):    CPU Level/Rev:     6/15363
+2023-11-02T21:02:44 (Info):    Start Mem Total:   8122 MB
+2023-11-02T21:02:44 (Info):    Start Mem Used:    90%
+2023-11-02T21:02:44 (Info):    -
+2023-11-02T21:02:44 (Info):    Loaded dataset index cache in 0.08s, 0.6 megabytes.
+2023-11-02T21:02:44 (Info):    Error: A license manager is already running.
+2023-11-02T21:02:45 (Info):    License check took 0.61 seconds.
+2023-11-02T21:02:45 (Info):    

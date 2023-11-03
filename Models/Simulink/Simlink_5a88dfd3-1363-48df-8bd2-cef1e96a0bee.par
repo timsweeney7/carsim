@@ -1,0 +1,35 @@
+PARSFILE
+#FullDataName Models: Simulink`Connection 1`Simulink
+#RunMdlFile Simulink\ENPM667_Midterm.slx
+SIMULINK_MODEL_FILE Simulink\ENPM667_Midterm.slx
+#RingCtrl0 -1
+#RingCtrl2 0
+*MULTI_SOLVERS 0
+*MULTI_S_WRAPPER 0
+#CheckBox0 0    
+*USE_ALT_DIR 0
+#CheckBox1 0    
+*USE_DIFF_SOLVERS 0
+#CheckBox3 0    
+#CheckBox5 0    
+#BlueLink3 I/O Channels: Ports` ` , vs_state Ports` , vs_state Ports`
+
+#BlueLink4 I/O Channels: Ports` ` , vs_ctl Ports` , vs_ctl Ports`
+
+#BlueLink5 I/O Channels: Ports` ` , vs_kin Ports` , vs_kin Ports`
+
+#BlueLink6 I/O Channels: Ports` ` , vs_dyn Ports` , vs_dyn Ports`
+
+
+LOG_ENTRY Used Dataset: Models: Simulink; { Simulink } Connection 1
+#Library : Models: Simulink
+#DataSet : Connection 1
+#Category: Simulink
+#FileID  : Simlink_5a88dfd3-1363-48df-8bd2-cef1e96a0bee
+#Created : 11-02-2023 19:46:38
+#Modified: 11-02-2023 21:03:46
+#Product : CarSim 2023.2
+#DataVer : 2023.2
+#VehCode 
+
+END

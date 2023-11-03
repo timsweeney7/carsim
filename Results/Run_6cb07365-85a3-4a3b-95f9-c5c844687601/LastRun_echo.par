@@ -9,7 +9,7 @@ CATEGORY * * Quick Start Guide Example
 TITLE Baseline <* * Quick Start Guide Example>
 
 ! Echo: Results\Run_6cb07365-85a3-4a3b-95f9-c5c844687601\LastRun_echo.par
-! This run was made 21:54 on November 01, 2023.
+! This run was made 22:00 on November 01, 2023.
 
 !------------------------------------------------------------------------------------
 ! SYSTEM PARAMETERS (SIMULATION OPTIONS)
@@ -3108,20 +3108,20 @@ LTARG_ID(1)         1  ! Double Lane Change (Quick Start)
 ! Col 1 = station (m), col 2 = lateral offset (m)
 LTARG_TABLE(1) SPLINE_FLAT ! spline interpolation, flat-line extrapolation
  70, 0
- 75, 0.2
- 80, 1.1
- 85, 2.4
- 90, 3.3
- 95, 3.5
- 100, 3.5
- 105, 3.5
- 110, 3.5
- 115, 3.5
- 120, 3.5
- 125, 3.3
- 130, 2.4
- 135, 1.1
- 140, 0.2
+ 75, 0
+ 80, 0
+ 85, 0
+ 90, 0
+ 95, 0
+ 100, 0
+ 105, 0
+ 110, 0
+ 115, 0
+ 120, 0
+ 125, 0
+ 130, 0
+ 135, 0
+ 140, 0
  145, 0
 ENDTABLE
 LTARG_GAIN(1)       1 ! [D] Multiplied with calculated value to get lateral offset

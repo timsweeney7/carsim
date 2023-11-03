@@ -1,4 +1,4 @@
-Run made by CarSim 2023.2 at 21:54 on November 01, 2023.
+Run made by CarSim 2023.2 at 22:00 on November 01, 2023.
 Vehicle Configuration: 
 Started with simfile: simfile.sim
 
@@ -166,7 +166,7 @@ Used Dataset: Multiple Moving Objects; { Points of Interest } 1 Driver Preview P
  Baseline <* * Quick Start Guide Example>
 Used Dataset: CarSim Run Control; { * * Quick Start Guide Example } Baseline
 
-Time to read input = 0.06508
+Time to read input = 0.0911836
 Function F_BOOST_R_TABLE extrapolated (out of range HIGH) for X = 176.505 N-m at T = 0
 Function F_REB_STOP_TABLE(1,1) extrapolated (out of range HIGH) for X = 0 mm at T = 0
 Function F_JNC_STOP_TABLE(1,1) extrapolated (out of range LOW) for X = 0 mm at T = 0
@@ -188,5 +188,5 @@ Function MZ_TIRE_CARPET(1,2) extrapolated (out of range HIGH) for X = 26.0047 de
 
 Run stopped at t = 8.605. Station limit reached: driver station = 210.009
 
-Computational time ratio: RTIME = 0.119852 (real time)/(simulation time)
+Computational time ratio: RTIME = 0.121838 (real time)/(simulation time)
 
