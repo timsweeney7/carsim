@@ -30,6 +30,11 @@ OPT_INT_METHOD 0
 OPT_IO_SYNC_FM 1
 tstep 0.0005
 iprint 50
+ENTER_PARSFILE IO_Channels\I_Channels\Import_7ef72bdc-ad14-4f18-acd0-46cfd678f4f5.par
+#FullDataName I/O Channels: Import`Steering Angle`Controls
+LOG_ENTRY Used Dataset: I/O Channels: Import; { Controls } Steering Angle
+EXIT_PARSFILE IO_Channels\I_Channels\Import_7ef72bdc-ad14-4f18-acd0-46cfd678f4f5.par
+
 ENTER_PARSFILE IO_Channels\O_Channels\Export_1a8f3a42-5573-463f-90f0-d54785ae8015.par
 #FullDataName I/O Channels: Export`Pos, Vel, Yaw`Vehicle Parameters
 LOG_ENTRY Used Dataset: I/O Channels: Export; { Vehicle Parameters } Pos, Vel, Yaw
@@ -4166,46 +4171,6 @@ SPEED_TARGET_S_CONSTANT 0
 set_description SPEED_TARGET_ID Procedure: DLC @ 120 km/h (Quick Start)
 SPEED_TARGET_CONSTANT 120
 OPT_SC_ENGINE_BRAKING 0
-ENTER_PARSFILE Control\Driver\StrDM_8597394d-a68f-46f7-992e-beb4bd86bc2e.par
-#FullDataName Control: Steering by the Closed-loop Driver Model`Double Lane Change (Quick Start)`Vehicle Dynamics Tests
-SET_ILTARG_FOR_ID 0
-set_description LTARG_ID Double Lane Change (Quick Start)
-INSTALL_DM_PATH_FOLLOWER
-OPT_DM 3
-INSTALL_DM_IMPORTS
-LTARG_TABLE SPLINE_FLAT
-70, 0
-75, 0
-80, 0
-85, 0
-90, 0
-95, 0
-100, 0
-105, 0
-110, 0
-115, 0
-120, 0
-125, 0
-130, 0
-135, 0
-140, 0
-145, 0
-ENDTABLE
-SET_PATH_WIDTH 0.1
-SET_PATH_DASH_INTERVAL 0.5
-SET_PATH_VERTEX_INTERVAL 1
-SET_PATH_DZ 0.03
-SET_PATH_COLOR 0.4 0.4 1
-LTARG_ID_DM LTARG_ID
-CREATE_PATH_OBJ on
-OPT_STR_BY_TRQ 0
-AV_SW_MAX_DM 1200
-A_SW_MAX_DM 540
-VLOW_DM 10
-TPREV_CONSTANT 0.5
-LOG_ENTRY Used Dataset: Control: Steering by the Closed-loop Driver Model; { Vehicle Dynamics Tests } Double Lane Change (Quick Start)
-EXIT_PARSFILE Control\Driver\StrDM_8597394d-a68f-46f7-992e-beb4bd86bc2e.par
-
 ENTER_PARSFILE Control\Braking\PbkCon_bf4961f4-c4cf-4b18-a8f7-5f65e31ecd3f.par
 #FullDataName Control: Braking MC Pressure (Open Loop)`Constant: 0 MPa`Constant
 PBK_CON_CONSTANT 0
@@ -4243,6 +4208,11 @@ EXIT_PARSFILE Roads\BuilderSegment\RoadSeg_d01c3af3-a99a-4d27-b9a7-7d2b9ad6a010.
 
 ROAD_PATH_ID = PATH_ID
 set_description road_path_id PATH_ID for: 100 m Radius
+ENTER_PARSFILE Generic\Lists\GenList_ce6a2094-1cba-439a-a100-d1c17a2330c8.par
+#FullDataName Generic Data Lists`Test`Testing
+LOG_ENTRY Used Dataset: Generic Data Lists; { Testing } Test
+EXIT_PARSFILE Generic\Lists\GenList_ce6a2094-1cba-439a-a100-d1c17a2330c8.par
+
 ENTER_PARSFILE Roads\Friction\RdMu_25e73395-9471-44b9-9c60-27bd9cc24921.par
 #FullDataName Road: Friction Map, S-L Grid`Constant: 0.85`Constant
 MU_ROAD_COMBINE ADD
@@ -4459,6 +4429,533 @@ compute_normals on
 set_specular 1 1 1
 set_auto_detail_type Foliage
 EXIT_PARSFILE Roads\3D_Road\Road_c76ab0d9-60d9-4781-bd32-84e57bf8316e.ani
+
+add_reference_frame road_stuff_1_3_Elm:_Summer,_Small
+reference_frame_ghosts off
+set_offset_var_yaw -57.0093006155
+set_offset_var_x -111.554942501
+set_offset_var_y 27.5811156969
+set_offset_var_z 0
+ENTER_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+#FullDataName Animator: Shape File Link`Elm: Summer, Small`Environment: Trees
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Elm_Small_Summer_A.OSG
+SET_COLOR 1 1 1
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+EXIT_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+
+add_reference_frame road_stuff_2_3_Elm:_Summer,_Small
+reference_frame_ghosts off
+set_offset_var_yaw 133.132052358
+set_offset_var_x -47.0343162262
+set_offset_var_y 55.936686494
+set_offset_var_z 0
+ENTER_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+#FullDataName Animator: Shape File Link`Elm: Summer, Small`Environment: Trees
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Elm_Small_Summer_A.OSG
+SET_COLOR 1 1 1
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+EXIT_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+
+add_reference_frame road_stuff_3_3_Elm:_Summer,_Small
+reference_frame_ghosts off
+set_offset_var_yaw -29.9083969058
+set_offset_var_x -63.6232460921
+set_offset_var_y -10.6067021328
+set_offset_var_z 0
+ENTER_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+#FullDataName Animator: Shape File Link`Elm: Summer, Small`Environment: Trees
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Elm_Small_Summer_A.OSG
+SET_COLOR 1 1 1
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+EXIT_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+
+add_reference_frame road_stuff_4_3_Elm:_Summer,_Small
+reference_frame_ghosts off
+set_offset_var_yaw 158.456786903
+set_offset_var_x -24.933073747
+set_offset_var_y 36.8434339635
+set_offset_var_z 0
+ENTER_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+#FullDataName Animator: Shape File Link`Elm: Summer, Small`Environment: Trees
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Elm_Small_Summer_A.OSG
+SET_COLOR 1 1 1
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+EXIT_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+
+add_reference_frame road_stuff_5_3_Elm:_Summer,_Small
+reference_frame_ghosts off
+set_offset_var_yaw -13.8082828627
+set_offset_var_x -31.2066052846
+set_offset_var_y -26.9712970975
+set_offset_var_z 0
+ENTER_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+#FullDataName Animator: Shape File Link`Elm: Summer, Small`Environment: Trees
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Elm_Small_Summer_A.OSG
+SET_COLOR 1 1 1
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+EXIT_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+
+add_reference_frame road_stuff_6_3_Elm:_Summer,_Small
+reference_frame_ghosts off
+set_offset_var_yaw 174.786084064
+set_offset_var_x -5.91138341652
+set_offset_var_y 35.2191537096
+set_offset_var_z 0
+ENTER_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+#FullDataName Animator: Shape File Link`Elm: Summer, Small`Environment: Trees
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Elm_Small_Summer_A.OSG
+SET_COLOR 1 1 1
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+EXIT_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+
+add_reference_frame road_stuff_7_3_Elm:_Summer,_Small
+reference_frame_ghosts off
+set_offset_var_yaw 22.001579333
+set_offset_var_x 46.0048281047
+set_offset_var_y -13.8569092812
+set_offset_var_z 0
+ENTER_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+#FullDataName Animator: Shape File Link`Elm: Summer, Small`Environment: Trees
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Elm_Small_Summer_A.OSG
+SET_COLOR 1 1 1
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+EXIT_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+
+add_reference_frame road_stuff_8_3_Elm:_Summer,_Small
+reference_frame_ghosts off
+set_offset_var_yaw 209.965692685
+set_offset_var_x 31.7420401432
+set_offset_var_y 44.9450693621
+set_offset_var_z 0
+ENTER_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+#FullDataName Animator: Shape File Link`Elm: Summer, Small`Environment: Trees
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Elm_Small_Summer_A.OSG
+SET_COLOR 1 1 1
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+EXIT_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+
+add_reference_frame road_stuff_9_3_Elm:_Summer,_Small
+reference_frame_ghosts off
+set_offset_var_yaw 38.3881722738
+set_offset_var_x 81.2870657031
+set_offset_var_y -2.6022560638
+set_offset_var_z 0
+ENTER_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+#FullDataName Animator: Shape File Link`Elm: Summer, Small`Environment: Trees
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Elm_Small_Summer_A.OSG
+SET_COLOR 1 1 1
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+EXIT_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+
+add_reference_frame road_stuff_10_3_Elm:_Summer,_Small
+reference_frame_ghosts off
+set_offset_var_yaw 227.899271673
+set_offset_var_x 48.8214495672
+set_offset_var_y 55.8853078651
+set_offset_var_z 0
+ENTER_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+#FullDataName Animator: Shape File Link`Elm: Summer, Small`Environment: Trees
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Elm_Small_Summer_A.OSG
+SET_COLOR 1 1 1
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+EXIT_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+
+add_reference_frame road_stuff_11_3_Elm:_Summer,_Small
+reference_frame_ghosts off
+set_offset_var_yaw 54.717469435
+set_offset_var_x 101.835139121
+set_offset_var_y 27.9433074566
+set_offset_var_z 0
+ENTER_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+#FullDataName Animator: Shape File Link`Elm: Summer, Small`Environment: Trees
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Elm_Small_Summer_A.OSG
+SET_COLOR 1 1 1
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+EXIT_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+
+add_reference_frame road_stuff_12_3_Elm:_Summer,_Small
+reference_frame_ghosts off
+set_offset_var_yaw 243.369132141
+set_offset_var_x 67.937378787
+set_offset_var_y 65.9337034071
+set_offset_var_z 0
+ENTER_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+#FullDataName Animator: Shape File Link`Elm: Summer, Small`Environment: Trees
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Elm_Small_Summer_A.OSG
+SET_COLOR 1 1 1
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+EXIT_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+
+add_reference_frame road_stuff_13_3_Elm:_Summer,_Small
+reference_frame_ghosts off
+set_offset_var_yaw 73.7396682333
+set_offset_var_x 126.815917976
+set_offset_var_y 63.0117187746
+set_offset_var_z 0
+ENTER_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+#FullDataName Animator: Shape File Link`Elm: Summer, Small`Environment: Trees
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Elm_Small_Summer_A.OSG
+SET_COLOR 1 1 1
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+EXIT_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+
+add_reference_frame road_stuff_14_3_Elm:_Summer,_Small
+reference_frame_ghosts off
+set_offset_var_yaw 261.818373145
+set_offset_var_x 64.2394424201
+set_offset_var_y 90.7639815093
+set_offset_var_z 0
+ENTER_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+#FullDataName Animator: Shape File Link`Elm: Summer, Small`Environment: Trees
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Elm_Small_Summer_A.OSG
+SET_COLOR 1 1 1
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+EXIT_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+
+add_reference_frame road_stuff_15_3_Elm:_Summer,_Small
+reference_frame_ghosts off
+set_offset_var_yaw 89.3814160404
+set_offset_var_x 132.842257533
+set_offset_var_y 98.5657358488
+set_offset_var_z 0
+ENTER_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+#FullDataName Animator: Shape File Link`Elm: Summer, Small`Environment: Trees
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Elm_Small_Summer_A.OSG
+SET_COLOR 1 1 1
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+EXIT_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+
+add_reference_frame road_stuff_16_3_Elm:_Summer,_Small
+reference_frame_ghosts off
+set_offset_var_yaw 278.777923881
+set_offset_var_x 76.2957759842
+set_offset_var_y 111.7811106
+set_offset_var_z 0
+ENTER_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+#FullDataName Animator: Shape File Link`Elm: Summer, Small`Environment: Trees
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Elm_Small_Summer_A.OSG
+SET_COLOR 1 1 1
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+EXIT_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+
+add_reference_frame road_stuff_17_3_Elm:_Summer,_Small
+reference_frame_ghosts off
+set_offset_var_yaw 108.002544382
+set_offset_var_x 118.357275536
+set_offset_var_y 138.46242098
+set_offset_var_z 0
+ENTER_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+#FullDataName Animator: Shape File Link`Elm: Summer, Small`Environment: Trees
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Elm_Small_Summer_A.OSG
+SET_COLOR 1 1 1
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+EXIT_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+
+add_reference_frame road_stuff_18_3_Elm:_Summer,_Small
+reference_frame_ghosts off
+set_offset_var_yaw 296.310432412
+set_offset_var_x 60.0591846572
+set_offset_var_y 129.69670585
+set_offset_var_z 0
+ENTER_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+#FullDataName Animator: Shape File Link`Elm: Summer, Small`Environment: Trees
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Elm_Small_Summer_A.OSG
+SET_COLOR 1 1 1
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+EXIT_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+
+add_reference_frame road_stuff_19_3_Elm:_Summer,_Small
+reference_frame_ghosts off
+set_offset_var_yaw 124.389137323
+set_offset_var_x 106.412195757
+set_offset_var_y 172.832321768
+set_offset_var_z 0
+ENTER_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+#FullDataName Animator: Shape File Link`Elm: Summer, Small`Environment: Trees
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Elm_Small_Summer_A.OSG
+SET_COLOR 1 1 1
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+EXIT_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+
+add_reference_frame road_stuff_20_3_Elm:_Summer,_Small
+reference_frame_ghosts off
+set_offset_var_yaw 313.957532502
+set_offset_var_x 51.4695954534
+set_offset_var_y 149.62993798
+set_offset_var_z 0
+ENTER_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+#FullDataName Animator: Shape File Link`Elm: Summer, Small`Environment: Trees
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Elm_Small_Summer_A.OSG
+SET_COLOR 1 1 1
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+EXIT_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+
+add_reference_frame road_stuff_21_3_Elm:_Summer,_Small
+reference_frame_ghosts off
+set_offset_var_yaw 142.265420531
+set_offset_var_x 83.2326055308
+set_offset_var_y 207.556187068
+set_offset_var_z 0
+ENTER_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+#FullDataName Animator: Shape File Link`Elm: Summer, Small`Environment: Trees
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Elm_Small_Summer_A.OSG
+SET_COLOR 1 1 1
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+EXIT_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+
+add_reference_frame road_stuff_22_3_Elm:_Summer,_Small
+reference_frame_ghosts off
+set_offset_var_yaw 330.344125442
+set_offset_var_x 37.1586958574
+set_offset_var_y 165.26286327
+set_offset_var_z 0
+ENTER_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+#FullDataName Animator: Shape File Link`Elm: Summer, Small`Environment: Trees
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Elm_Small_Summer_A.OSG
+SET_COLOR 1 1 1
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+EXIT_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+
+add_reference_frame road_stuff_23_3_Elm:_Summer,_Small
+reference_frame_ghosts off
+set_offset_var_yaw 158.88119659
+set_offset_var_x 45.6503858863
+set_offset_var_y 218.190237619
+set_offset_var_z 0
+ENTER_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+#FullDataName Animator: Shape File Link`Elm: Summer, Small`Environment: Trees
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Elm_Small_Summer_A.OSG
+SET_COLOR 1 1 1
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+EXIT_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+
+add_reference_frame road_stuff_24_3_Elm:_Summer,_Small
+reference_frame_ghosts off
+set_offset_var_yaw 348.27770443
+set_offset_var_x 14.5570105614
+set_offset_var_y 170.155655107
+set_offset_var_z 0
+ENTER_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+#FullDataName Animator: Shape File Link`Elm: Summer, Small`Environment: Trees
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Elm_Small_Summer_A.OSG
+SET_COLOR 1 1 1
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+EXIT_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+
+add_reference_frame road_stuff_25_3_Elm:_Summer,_Small
+reference_frame_ghosts off
+set_offset_var_yaw 175.898043105
+set_offset_var_x 9.63171797511
+set_offset_var_y 234.305072536
+set_offset_var_z 0
+ENTER_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+#FullDataName Animator: Shape File Link`Elm: Summer, Small`Environment: Trees
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Elm_Small_Summer_A.OSG
+SET_COLOR 1 1 1
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+EXIT_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+
+add_reference_frame road_stuff_26_3_Elm:_Summer,_Small
+reference_frame_ghosts off
+set_offset_var_yaw 3.69026911894
+set_offset_var_x -4.1288752502
+set_offset_var_y 164.016989067
+set_offset_var_z 0
+ENTER_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+#FullDataName Animator: Shape File Link`Elm: Summer, Small`Environment: Trees
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Elm_Small_Summer_A.OSG
+SET_COLOR 1 1 1
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+EXIT_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+
+add_reference_frame road_stuff_27_3_Elm:_Summer,_Small
+reference_frame_ghosts off
+set_offset_var_yaw -167.085110379
+set_offset_var_x -29.3571745442
+set_offset_var_y 228.027258046
+set_offset_var_z 0
+ENTER_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+#FullDataName Animator: Shape File Link`Elm: Summer, Small`Environment: Trees
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Elm_Small_Summer_A.OSG
+SET_COLOR 1 1 1
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+EXIT_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+
+add_reference_frame road_stuff_28_3_Elm:_Summer,_Small
+reference_frame_ghosts off
+set_offset_var_yaw 20.8217071934
+set_offset_var_x -24.1891283201
+set_offset_var_y 163.605727502
+set_offset_var_z 0
+ENTER_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+#FullDataName Animator: Shape File Link`Elm: Summer, Small`Environment: Trees
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Elm_Small_Summer_A.OSG
+SET_COLOR 1 1 1
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+EXIT_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+
+add_reference_frame road_stuff_29_3_Elm:_Summer,_Small
+reference_frame_ghosts off
+set_offset_var_yaw -149.609897628
+set_offset_var_x -66.6756114492
+set_offset_var_y 213.690821256
+set_offset_var_z 0
+ENTER_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+#FullDataName Animator: Shape File Link`Elm: Summer, Small`Environment: Trees
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Elm_Small_Summer_A.OSG
+SET_COLOR 1 1 1
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+EXIT_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+
+add_reference_frame road_stuff_30_3_Elm:_Summer,_Small
+reference_frame_ghosts off
+set_offset_var_yaw 38.6406946219
+set_offset_var_x -45.3027242979
+set_offset_var_y 156.667148077
+set_offset_var_z 0
+ENTER_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+#FullDataName Animator: Shape File Link`Elm: Summer, Small`Environment: Trees
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Elm_Small_Summer_A.OSG
+SET_COLOR 1 1 1
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+EXIT_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+
+add_reference_frame road_stuff_31_3_Elm:_Summer,_Small
+reference_frame_ghosts off
+set_offset_var_yaw -132.077389097
+set_offset_var_x -95.4892219027
+set_offset_var_y 186.212707882
+set_offset_var_z 0
+ENTER_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+#FullDataName Animator: Shape File Link`Elm: Summer, Small`Environment: Trees
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Elm_Small_Summer_A.OSG
+SET_COLOR 1 1 1
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+EXIT_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
 
 LOG_ENTRY Used Dataset: Road: 3D Surface (All Properties); { Flat Test Pads } DLC, Mu = 0.85
 EXIT_PARSFILE Roads\3D_Road\Road_c76ab0d9-60d9-4781-bd32-84e57bf8316e.par
@@ -5065,6 +5562,11 @@ EXIT_PARSFILE Animator\Arrows\Arrows_f2c29d4b-df79-4c67-b153-729d3f552770.par
 LOG_ENTRY Used Dataset: Generic Data Group; { Tire Force Arrows } 2 Axle - Fx, Fy, Fz
 EXIT_PARSFILE Generic\Group\GenGrp_c11e4bbe-5e3a-4498-91a5-6c42d1db378a.par
 
+ENTER_PARSFILE IO_Channels\I_Channels\Import_7ef72bdc-ad14-4f18-acd0-46cfd678f4f5.par
+#FullDataName I/O Channels: Import`Steering Angle`Controls
+LOG_ENTRY Used Dataset: I/O Channels: Import; { Controls } Steering Angle
+EXIT_PARSFILE IO_Channels\I_Channels\Import_7ef72bdc-ad14-4f18-acd0-46cfd678f4f5.par
+
 ENTER_PARSFILE Plot\Setup\Plot_315ea46e-b7b6-40d8-84de-a7ef2624a470.par
 #FullDataName Plot: Setup`Lateral Tracking vs. Station`Tracking
 ADD_ENTITY Plot
@@ -5305,9 +5807,12 @@ COLORS 8,2,3,11,4,0,6,14,8,7,10,8,12,13,14,6,1,2,0,4
 LOG_ENTRY Used Dataset: Plot: Format; Default Plot Settings
 EXIT_PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
 
-PLOTCHANNELS Yo, Xo
-WRT_YO
+PLOTCHANNELS Xo, s
 WRT_XO
+WRT_S
+PLOTCHANNELS Yo, s
+WRT_YO
+WRT_S
 YAXISLABEL Yo
 XAXISLABEL Xo
 YMaxmin Auto
@@ -5337,7 +5842,7 @@ ROAD_ID_OBJ 0
 OPT_RECYCLE_OBJ 0
 H_OBJ = 0 ! Default for blank field
 WRITE_ADD_REFERENCE_FRAME_OBJECT
-ADD_REFERENCE_FRAME object_1a
+ADD_REFERENCE_FRAME object_1f
 SET_EULER_ANGLES YAW_PITCH_ROLL
 SET_X_NAME X_Obj_1
 WRT_X_Obj_1
@@ -5390,11 +5895,15 @@ NUM_CACHED_RUNS 1
 LOG_ENTRY Used Dataset: CarSim Run Control; { * * Quick Start Guide Example } Baseline
 EXIT_PARSFILE Runs\Run_6cb07365-85a3-4a3b-95f9-c5c844687601.par
 
+IMPORT IMP_STEER_L1 Replace 0.0 ! 1
+IMPORT IMP_STEER_L1 Replace 0.0 ! 1
 EXPORT AVz
 EXPORT Xo
 EXPORT Yo
 EXPORT Vxz_Fwd
-PORTS_EXP 1,4
+EXPORT Lat_Veh
+PORTS_IMP 1,2
+PORTS_EXP 1,5
 
 
 END

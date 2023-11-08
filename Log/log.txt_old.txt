@@ -1,44 +1,23 @@
-2023-11-02T21:02:44 Logfile initialized.
-2023-11-02T21:02:44 (Info):    CarSim 2023.2
-2023-11-02T21:02:44 (Info):    -
-2023-11-02T21:02:44 (Info):    command-line: 
-2023-11-02T21:02:44 (Info):    -
-2023-11-02T21:02:44 (Info):    Working Dir: C:\CarSim_Database\ENPM667_test\
-2023-11-02T21:02:44 (Info):    Program Dir: C:\Program Files (x86)\CarSim2023.2_Prog\
-2023-11-02T21:02:44 (Info):    -
-2023-11-02T21:02:44 (Info):    OS Version:        6.2 (build 9200)
-2023-11-02T21:02:44 (Info):    CPU Architecture:  x64
-2023-11-02T21:02:44 (Info):    CPU Count:         8
-2023-11-02T21:02:44 (Info):    CPU Level/Rev:     6/15363
-2023-11-02T21:02:44 (Info):    Start Mem Total:   8122 MB
-2023-11-02T21:02:44 (Info):    Start Mem Used:    90%
-2023-11-02T21:02:44 (Info):    -
-2023-11-02T21:02:44 (Info):    Loaded dataset index cache in 0.08s, 0.6 megabytes.
-2023-11-02T21:02:44 (Info):    Error: A license manager is already running.
-2023-11-02T21:02:45 (Info):    License check took 0.61 seconds.
-2023-11-02T21:02:45 (Info):    No install ID found at regkey "Software\Mechanical Simulation Corp\CarSim 2023.2".
-2023-11-02T21:02:45 (Info):    No install ID found at regkey "Software\Mechanical Simulation Corp\CarSim 2023.2".
-2023-11-02T21:02:52 (Info):    Initial setup took 7.49 seconds.
-2023-11-02T21:02:52 (Info):    Auto updates took 0.00 seconds.
-2023-11-02T21:02:58 (Info):    Loaded last screen in 5.53 seconds.
-2023-11-02T21:02:58 (Info):    Total init time 14.08 seconds.
-2023-11-02T21:17:02 (Info):    Dataset created in "Generic\Lists\": { Vehicle Properties } Properties #1 (UUID: GenList_84b564f4-d582-409a-aa1a-449bcef22465).
-2023-11-02T21:18:04 (Info):    Dataset deleted: Generic\Lists\GenList_84b564f4-d582-409a-aa1a-449bcef22465.par { Vehicle Properties } Properties #1.
-2023-11-02T21:22:36 (Info):    Dataset created in "IO_Channels\O_Channels\": { Empty (You should edit or delete this) } No Data (UUID: Export_1a8f3a42-5573-463f-90f0-d54785ae8015).
-2023-11-02T21:55:04 (Info):    Assembling animation...
-2023-11-02T21:55:11 (Info):    Animation assembly finished.
-2023-11-02T21:57:01 (Info):    Feature                  Source                       Version  Acquired  Count
-2023-11-02T21:57:01 (Info):    -----------------        -----------------            -------  --------  -----
-2023-11-02T21:57:01 (Info):    carsimus                 C:\FLEXlm                    2023     [   ]          
-2023-11-02T21:57:01 (Info):    carsimfus                C:\FLEXlm                    2023     [   ]          
-2023-11-02T21:57:01 (Info):    carsimsguius             C:\FLEXlm                    2023     [   ]          
-2023-11-02T21:57:01 (Info):    Acquired [1] license for carsimsguius
-2023-11-02T21:57:01 (Info):    Acquired [1] license for carsimus
-2023-11-02T21:57:01 (Info):    Acquired [1] license for carsimfus
-2023-11-02T22:01:07 (Info):    Assembling animation...
-2023-11-02T22:01:10 (Info):    Animation assembly finished.
-2023-11-02T22:03:07 (Info):    123 index cache entries written in 0.016s
-2023-11-02T22:03:07 (Info):    Released [1] license for carsimsguius
-2023-11-02T22:03:07 (Info):    Released [1] license for carsimus
-2023-11-02T22:03:07 (Info):    Released [1] license for carsimfus
-2023-11-02T22:03:07 (Info):    Exiting application...
+2023-11-06T08:20:13 Logfile initialized.
+2023-11-06T08:20:13 (Info):    CarSim 2023.2
+2023-11-06T08:20:13 (Info):    -
+2023-11-06T08:20:13 (Info):    command-line: 
+2023-11-06T08:20:13 (Info):    -
+2023-11-06T08:20:13 (Info):    Working Dir: C:\CarSim_Database\ENPM667_test\
+2023-11-06T08:20:13 (Info):    Program Dir: C:\Program Files (x86)\CarSim2023.2_Prog\
+2023-11-06T08:20:13 (Info):    -
+2023-11-06T08:20:13 (Info):    OS Version:        6.2 (build 9200)
+2023-11-06T08:20:13 (Info):    CPU Architecture:  x64
+2023-11-06T08:20:13 (Info):    CPU Count:         8
+2023-11-06T08:20:13 (Info):    CPU Level/Rev:     6/15363
+2023-11-06T08:20:13 (Info):    Start Mem Total:   8122 MB
+2023-11-06T08:20:13 (Info):    Start Mem Used:    91%
+2023-11-06T08:20:13 (Info):    -
+2023-11-06T08:20:13 (Info):    Loaded dataset index cache in 0.00s, 0.6 megabytes.
+2023-11-06T08:20:14 (Info):    Feature                  Source                       Version  Acquired  Count
+2023-11-06T08:20:14 (Info):    -----------------        -----------------            -------  --------  -----
+2023-11-06T08:20:14 (Info):    carsimus                 C:\FLEXlm                    2023     [   ]          
+2023-11-06T08:20:14 (Info):    carsimfus                C:\FLEXlm                    2023     [   ]          
+2023-11-06T08:20:14 (Info):    carsimsguius             C:\FLEXlm                    2023     [   ]          
+2023-11-06T08:51:58 (Info):    124 index cache entries written in 0.047s
+2023-11-06T08:51:58 (Info):    Exiting application...

@@ -22,6 +22,9 @@ OPT_IO_SYNC_FM 1
 *FREQ_OUT 40
 tstep 0.0005
 iprint 50
+PARSFILE IO_Channels\I_Channels\Import_7ef72bdc-ad14-4f18-acd0-46cfd678f4f5.par
+#BlueLink0 I/O Channels: Import`Steering Angle` Controls` , Import`Import_7ef72bdc-ad14-4f18-acd0-46cfd678f4f5
+
 PARSFILE IO_Channels\O_Channels\Export_1a8f3a42-5573-463f-90f0-d54785ae8015.par
 #BlueLink1 I/O Channels: Export`Pos, Vel, Yaw` Vehicle Parameters` , Import/Export`Export_1a8f3a42-5573-463f-90f0-d54785ae8015
 
@@ -41,7 +44,7 @@ LOG_ENTRY Used Dataset: Models: Simulink; { Simulink } Connection 1
 #Category: Simulink
 #FileID  : Simlink_5a88dfd3-1363-48df-8bd2-cef1e96a0bee
 #Created : 11-02-2023 19:46:38
-#Modified: 11-02-2023 21:22:38
+#Modified: 11-07-2023 21:59:54
 #Product : CarSim 2023.2
 #DataVer : 2023.2
 #VehCode 

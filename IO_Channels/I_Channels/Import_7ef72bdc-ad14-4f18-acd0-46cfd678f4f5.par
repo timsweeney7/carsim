@@ -1,0 +1,25 @@
+PARSFILE
+#FullDataName I/O Channels: Import`Steering Angle`Controls
+#RingCtrl0 1
+#RingCtrl1 1
+*README_FILE Results\Run_6cb07365-85a3-4a3b-95f9-c5c844687601\Run_imp_tab.txt
+
+#MiscYellow0
+IMP_STEER_L1 Replace 0.0 ! 1
+#ENDMYellow
+
+#BlueLink0 CarSim Run Control`Baseline` * * Quick Start Guide Example` , example run`Run_6cb07365-85a3-4a3b-95f9-c5c844687601
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Import; { Controls } Steering Angle
+#Library : I/O Channels: Import
+#DataSet : Steering Angle
+#Category: Controls
+#FileID  : Import_7ef72bdc-ad14-4f18-acd0-46cfd678f4f5
+#Created : 11-05-2023 14:20:15
+#Modified: 11-07-2023 22:09:01
+#Product : CarSim 2023.2
+#DataVer : 2023.2
+#VehCode Import Channels
+
+END

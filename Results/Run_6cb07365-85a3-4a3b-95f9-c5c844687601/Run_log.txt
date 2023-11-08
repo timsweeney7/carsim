@@ -1,4 +1,4 @@
-Run made by CarSim 2023.2 at 21:23 on November 02, 2023.
+Run made by CarSim 2023.2 at 21:29 on November 07, 2023.
 Vehicle Configuration: 
 Started with simfile: simfile.sim
 
@@ -126,6 +126,7 @@ Used Dataset: Control: Braking MC Pressure (Open Loop); { Constant } Constant: 0
 Used Dataset: Control: Shifting (Closed Loop); { Closed-Loop Shifting } AT (All Available Gears)
  100 m Radius <Circles>
 Used Dataset: Path: Segment Builder; { Circles } 100 m Radius
+Used Dataset: Generic Data Lists; { Testing } Test
 Used Dataset: Road: Friction Map, S-L Grid; { Constant } Constant: 0.85
 Used Dataset: Road: Animator Surface Shapes; { Roads } Looped Road + 100 m Light Grass
 Used Dataset: Animator: Reference Frame; { Tracking: Vehicle } Skybox (Vehicle X-Y-Z)
@@ -133,6 +134,37 @@ Used Dataset: Animator: Shape File Link; { Environment: Sky Boxes } Partly Cloud
 Used Dataset: Animator: Shape File Link; { Environment: Land Bowls } Light Grass
 Used Dataset: Animator: Group; { Environment Spheres } Partly Cloudy Sky with Light Grass
 Used Dataset: Road: Animator Repeated Object; { Trees } Trees (-100, 400)
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
 Used Dataset: Road: 3D Surface (All Properties); { Flat Test Pads } DLC, Mu = 0.85
 Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Pyramid: Tail Org (X-Axis)
 Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Pyramid: Tail Org (X-Axis)
@@ -150,6 +182,7 @@ Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Pyramid
 Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Pyramid: Tail Org (Z-Axis)
 Used Dataset: Animator: Wheel Arrows and Other Indicators; { Tire Force Arrows (2 Axles) } 2A - Fz Tire Force Arrows
 Used Dataset: Generic Data Group; { Tire Force Arrows } 2 Axle - Fx, Fy, Fz
+Used Dataset: I/O Channels: Import; { Controls } Steering Angle
 Used Dataset: Plot: Format; Default Plot Settings
 Used Dataset: Plot: Setup; { Tracking } Lateral Tracking vs. Station
 Used Dataset: Plot: Format; Default Plot Settings
@@ -168,4 +201,4 @@ Used Dataset: Multiple Moving Objects; { Points of Interest } 1 Driver Preview P
  Baseline <* * Quick Start Guide Example>
 Used Dataset: CarSim Run Control; { * * Quick Start Guide Example } Baseline
 
-Time to read input = 0.0704455
+Time to read input = 0.117324
