@@ -5,7 +5,7 @@
     "Input File" : "C:\\CarSim_Database\\ENPM667_test\\Results\\Run_6cb07365-85a3-4a3b-95f9-c5c844687601\\LastRun.vs",
     "Model" : "Vehicle Configuration: I_I",
     "Product" : "CarSim 2023.2",
-    "Timestamp" : "21:31 on November 07, 2023",
+    "Timestamp" : "21:49 on November 08, 2023",
     "Title" : "Baseline <* * Quick Start Guide Example>",
     "Version" : 2,
     "XLabel" : "Time",

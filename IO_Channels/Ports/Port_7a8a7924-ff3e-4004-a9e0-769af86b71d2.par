@@ -1,0 +1,27 @@
+PARSFILE
+#FullDataName I/O Channels: Ports`Wheel angle`Steering
+#RingCtrl0 2
+#RingCtrl1 0
+#CheckBox0 0    
+
+IPORT_IMP 1
+PARSFILE IO_Channels\I_Channels\Import_2b0924b6-70de-411a-9f3c-672af65c2fba.par
+#BlueLink0 I/O Channels: Import`Steering L1` Steering` , Library for factor A`Import_2b0924b6-70de-411a-9f3c-672af65c2fba
+
+IPORT_IMP 2
+PARSFILE IO_Channels\I_Channels\Import_7d00410e-73fd-4e40-bf60-0eefee908ba2.par
+#BlueLink1 I/O Channels: Import`Steering R1` Steering` , Baseline run`Import_7d00410e-73fd-4e40-bf60-0eefee908ba2
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Ports; { Steering } Wheel angle
+#Library : I/O Channels: Ports
+#DataSet : Wheel angle
+#Category: Steering
+#FileID  : Port_7a8a7924-ff3e-4004-a9e0-769af86b71d2
+#Created : 11-08-2023 21:44:46
+#Modified: 11-08-2023 21:47:22
+#Product : CarSim 2023.2
+#DataVer : 2023.2
+#VehCode I/O Ports
+
+END

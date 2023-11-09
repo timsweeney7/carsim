@@ -1,23 +1,43 @@
-2023-11-06T08:20:13 Logfile initialized.
-2023-11-06T08:20:13 (Info):    CarSim 2023.2
-2023-11-06T08:20:13 (Info):    -
-2023-11-06T08:20:13 (Info):    command-line: 
-2023-11-06T08:20:13 (Info):    -
-2023-11-06T08:20:13 (Info):    Working Dir: C:\CarSim_Database\ENPM667_test\
-2023-11-06T08:20:13 (Info):    Program Dir: C:\Program Files (x86)\CarSim2023.2_Prog\
-2023-11-06T08:20:13 (Info):    -
-2023-11-06T08:20:13 (Info):    OS Version:        6.2 (build 9200)
-2023-11-06T08:20:13 (Info):    CPU Architecture:  x64
-2023-11-06T08:20:13 (Info):    CPU Count:         8
-2023-11-06T08:20:13 (Info):    CPU Level/Rev:     6/15363
-2023-11-06T08:20:13 (Info):    Start Mem Total:   8122 MB
-2023-11-06T08:20:13 (Info):    Start Mem Used:    91%
-2023-11-06T08:20:13 (Info):    -
-2023-11-06T08:20:13 (Info):    Loaded dataset index cache in 0.00s, 0.6 megabytes.
-2023-11-06T08:20:14 (Info):    Feature                  Source                       Version  Acquired  Count
-2023-11-06T08:20:14 (Info):    -----------------        -----------------            -------  --------  -----
-2023-11-06T08:20:14 (Info):    carsimus                 C:\FLEXlm                    2023     [   ]          
-2023-11-06T08:20:14 (Info):    carsimfus                C:\FLEXlm                    2023     [   ]          
-2023-11-06T08:20:14 (Info):    carsimsguius             C:\FLEXlm                    2023     [   ]          
-2023-11-06T08:51:58 (Info):    124 index cache entries written in 0.047s
-2023-11-06T08:51:58 (Info):    Exiting application...
+2023-11-08T21:39:43 Logfile initialized.
+2023-11-08T21:39:43 (Info):    CarSim 2023.2
+2023-11-08T21:39:43 (Info):    -
+2023-11-08T21:39:43 (Info):    command-line: 
+2023-11-08T21:39:43 (Info):    -
+2023-11-08T21:39:43 (Info):    Working Dir: C:\CarSim_Database\ENPM667_test\
+2023-11-08T21:39:43 (Info):    Program Dir: C:\Program Files (x86)\CarSim2023.2_Prog\
+2023-11-08T21:39:43 (Info):    -
+2023-11-08T21:39:43 (Info):    OS Version:        6.2 (build 9200)
+2023-11-08T21:39:43 (Info):    CPU Architecture:  x64
+2023-11-08T21:39:43 (Info):    CPU Count:         8
+2023-11-08T21:39:43 (Info):    CPU Level/Rev:     6/15363
+2023-11-08T21:39:43 (Info):    Start Mem Total:   8122 MB
+2023-11-08T21:39:43 (Info):    Start Mem Used:    43%
+2023-11-08T21:39:43 (Info):    -
+2023-11-08T21:39:43 (Info):    Loaded dataset index cache in 0.00s, 0.6 megabytes.
+2023-11-08T21:39:44 (Info):    Feature                  Source                       Version  Acquired  Count
+2023-11-08T21:39:44 (Info):    -----------------        -----------------            -------  --------  -----
+2023-11-08T21:39:44 (Info):    carsimus                 C:\FLEXlm                    2023     [   ]          
+2023-11-08T21:39:44 (Info):    carsimfus                C:\FLEXlm                    2023     [   ]          
+2023-11-08T21:39:44 (Info):    carsimsguius             C:\FLEXlm                    2023     [   ]          
+2023-11-08T21:39:45 (Info):    Acquired [1] license for carsimsguius
+2023-11-08T21:39:45 (Info):    Acquired [1] license for carsimus
+2023-11-08T21:39:45 (Info):    Acquired [1] license for carsimfus
+2023-11-08T21:39:45 (Info):    License check took 1.48 seconds.
+2023-11-08T21:39:45 (Info):    No install ID found at regkey "Software\Mechanical Simulation Corp\CarSim 2023.2".
+2023-11-08T21:39:45 (Info):    No install ID found at regkey "Software\Mechanical Simulation Corp\CarSim 2023.2".
+2023-11-08T21:39:46 (Info):    Initial setup took 0.75 seconds.
+2023-11-08T21:39:46 (Info):    Auto updates took 0.00 seconds.
+2023-11-08T21:39:47 (Info):    Loaded last screen in 0.69 seconds.
+2023-11-08T21:39:47 (Info):    Total init time 3.36 seconds.
+2023-11-08T21:44:46 (Info):    Dataset created in "IO_Channels\Ports\": { Empty (You should edit or delete this) } No Data (UUID: Port_7a8a7924-ff3e-4004-a9e0-769af86b71d2).
+2023-11-08T21:45:34 (Info):    Dataset created in "IO_Channels\I_Channels\": { Empty (You should edit or delete this) } No Data (UUID: Import_2b0924b6-70de-411a-9f3c-672af65c2fba).
+2023-11-08T21:46:29 (Info):    Dataset created in "IO_Channels\I_Channels\": { Steering } Steering R1 (UUID: Import_7d00410e-73fd-4e40-bf60-0eefee908ba2).
+2023-11-08T21:49:15 (Info):    Assembling animation...
+2023-11-08T21:49:17 (Info):    Animation assembly finished.
+2023-11-08T21:50:00 (Info):    Assembling animation...
+2023-11-08T21:50:01 (Info):    Animation assembly finished.
+2023-11-08T21:56:19 (Info):    126 index cache entries written in 0.047s
+2023-11-08T21:56:20 (Info):    Released [1] license for carsimsguius
+2023-11-08T21:56:20 (Info):    Released [1] license for carsimus
+2023-11-08T21:56:20 (Info):    Released [1] license for carsimfus
+2023-11-08T21:56:20 (Info):    Exiting application...

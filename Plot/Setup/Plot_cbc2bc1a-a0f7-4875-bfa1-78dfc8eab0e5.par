@@ -6,15 +6,11 @@ ADD_ENTITY Plot
 PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
 #BlueLink0 Plot: Format`Default Plot Settings` ` , Plot format`PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862
 
-#BlueLink2 CarSim Run Control`Baseline` * * Quick Start Guide Example` , example run`Run_6cb07365-85a3-4a3b-95f9-c5c844687601
-
 #CheckBox1 0    
 
-*README_FILE Results\Run_6cb07365-85a3-4a3b-95f9-c5c844687601\Run_out_tab.txt
 
 #MiscYellow0
-PLOTCHANNELS Xo, s
-PLOTCHANNELS Yo, s
+PLOTCHANNELS Yo, Xo
 
 #ENDMYellow
 
@@ -25,8 +21,6 @@ XAXISLABEL Xo
 YMaxmin Auto
 #RingCtrl3 Auto
 XMaxmin Auto
-#RingCtrl4 0
-#RingCtrl6 0
 #RingCtrl8 1
 
 
@@ -45,7 +39,7 @@ LOG_ENTRY Used Dataset: Plot: Setup; { Tracking } Tracking XY #1
 #Category: Tracking
 #FileID  : Plot_cbc2bc1a-a0f7-4875-bfa1-78dfc8eab0e5
 #Created : 11-01-2023 21:39:35
-#Modified: 11-07-2023 21:29:40
+#Modified: 11-01-2023 21:40:30
 #Product : CarSim 2023.2
 #DataVer : 2023.2
 #VehCode Plot Setup
