@@ -13,7 +13,7 @@ TSTART_WRITE = 0;
 TSTOP 10
 SSTOP 210
 OPT_DIRECTION 0
-*SPEED 120
+*SPEED 60
 *TSTOP 10
 *TSTART 0
 *SSTART 0
@@ -26,7 +26,7 @@ SPEED_ID_SC = SPEED_TARGET_ID
 SPEED_TARGET_COMBINE ADD
 SPEED_TARGET_S_CONSTANT 0
 set_description SPEED_TARGET_ID Procedure: DLC @ 120 km/h (Quick Start)
-SPEED_TARGET_CONSTANT 120
+SPEED_TARGET_CONSTANT 60
 OPT_SC_ENGINE_BRAKING 0
 PARSFILE Control\Driver\StrDM_8597394d-a68f-46f7-992e-beb4bd86bc2e.par
 #BlueLink27 Control: Steering by the Closed-loop Driver Model`Double Lane Change (Quick Start)` Vehicle Dynamics Tests` , Steering`StrDM_8597394d-a68f-46f7-992e-beb4bd86bc2e
@@ -77,7 +77,7 @@ LOG_ENTRY Used Dataset: Procedures; { Handling Testing } DLC @ 120 km/h (Quick S
 #DataSet : DLC @ 120 km/h (Quick Start)
 #Category: Handling Testing
 #FileID  : Proc_3ae0353d-bd7c-43a3-9da4-150b6952a10e
-#Modified: 11-01-2023 21:53:50
+#Modified: 11-10-2023 01:45:46
 #Product : CarSim 2023.2
 #DataVer : 2023.2
 #VehCode Procedure
