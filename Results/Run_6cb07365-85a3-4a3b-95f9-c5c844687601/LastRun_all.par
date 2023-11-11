@@ -23,9 +23,9 @@ IUNIT 0
 IVEHICLE 0
 OPT_INT_METHOD 0
 OPT_VS_FILETYPE 2
-ENTER_PARSFILE Models\Simulink\Simlink_5a88dfd3-1363-48df-8bd2-cef1e96a0bee.par
-#FullDataName Models: Simulink`Connection 1`Simulink
-SIMULINK_MODEL_FILE Simulink\ENPM667_Midterm.slx
+ENTER_PARSFILE Models\Simulink\Simlink_af16327f-63cc-43c3-93b3-b27f8e660774.par
+#FullDataName Models: Simulink`Kinematic MPC Only`Simulink
+SIMULINK_MODEL_FILE Simulink\ENPM667_K_MPC_only.slx
 OPT_INT_METHOD 0
 OPT_IO_SYNC_FM 1
 tstep 0.0005
@@ -53,8 +53,8 @@ LOG_ENTRY Used Dataset: I/O Channels: Export; { Vehicle Parameters } Pos, Vel, Y
 EXIT_PARSFILE IO_Channels\O_Channels\Export_1a8f3a42-5573-463f-90f0-d54785ae8015.par
 
 LIVE_SERVER_UPDATE_FREQ_MAX 60
-LOG_ENTRY Used Dataset: Models: Simulink; { Simulink } Connection 1
-EXIT_PARSFILE Models\Simulink\Simlink_5a88dfd3-1363-48df-8bd2-cef1e96a0bee.par
+LOG_ENTRY Used Dataset: Models: Simulink; { Simulink } Kinematic MPC Only
+EXIT_PARSFILE Models\Simulink\Simlink_af16327f-63cc-43c3-93b3-b27f8e660774.par
 
 ENTER_PARSFILE Animator\Cameras\Camera_32ea6678-907c-4a10-af4b-b9431e3d2f8a.par
 #FullDataName Animator: Camera Setup`13 Azm, 9 El, 18 m, No Yaw`Vehicle Reference
@@ -4171,8 +4171,8 @@ OPT_STOP 1
 SSTART 0
 TSTART 0
 TSTART_WRITE = 0;
-TSTOP 10
-SSTOP 210
+TSTOP 20
+SSTOP 400
 OPT_DIRECTION 0
 INSTALL_SPEED_CONTROLLER
 OPT_SC 3
@@ -4181,7 +4181,7 @@ SPEED_ID_SC = SPEED_TARGET_ID
 SPEED_TARGET_COMBINE ADD
 SPEED_TARGET_S_CONSTANT 0
 set_description SPEED_TARGET_ID Procedure: DLC @ 120 km/h (Quick Start)
-SPEED_TARGET_CONSTANT 60
+SPEED_TARGET_CONSTANT 110
 OPT_SC_ENGINE_BRAKING 0
 ENTER_PARSFILE Control\Driver\StrDM_8597394d-a68f-46f7-992e-beb4bd86bc2e.par
 #FullDataName Control: Steering by the Closed-loop Driver Model`Double Lane Change (Quick Start)`Vehicle Dynamics Tests

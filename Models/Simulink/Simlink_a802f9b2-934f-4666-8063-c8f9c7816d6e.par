@@ -1,7 +1,7 @@
 PARSFILE
-#FullDataName Models: Simulink`Connection 1`Simulink
-#RunMdlFile Simulink\ENPM667_Midterm.slx
-SIMULINK_MODEL_FILE Simulink\ENPM667_Midterm.slx
+#FullDataName Models: Simulink`PID Only`Simulink
+#RunMdlFile Simulink\ENPM667_PID_only.slx
+SIMULINK_MODEL_FILE Simulink\ENPM667_PID_only.slx
 #RingCtrl0 -1
 #RingCtrl2 0
 *MULTI_SOLVERS 0
@@ -38,13 +38,13 @@ PARSFILE IO_Channels\O_Channels\Export_1a8f3a42-5573-463f-90f0-d54785ae8015.par
 
 LIVE_SERVER_UPDATE_FREQ_MAX 60
 
-LOG_ENTRY Used Dataset: Models: Simulink; { Simulink } Connection 1
+LOG_ENTRY Used Dataset: Models: Simulink; { Simulink } PID Only
 #Library : Models: Simulink
-#DataSet : Connection 1
+#DataSet : PID Only
 #Category: Simulink
-#FileID  : Simlink_5a88dfd3-1363-48df-8bd2-cef1e96a0bee
-#Created : 11-02-2023 19:46:38
-#Modified: 11-08-2023 21:44:48
+#FileID  : Simlink_a802f9b2-934f-4666-8063-c8f9c7816d6e
+#Created : 11-11-2023 16:04:47
+#Modified: 11-11-2023 16:04:47
 #Product : CarSim 2023.2
 #DataVer : 2023.2
 #VehCode 

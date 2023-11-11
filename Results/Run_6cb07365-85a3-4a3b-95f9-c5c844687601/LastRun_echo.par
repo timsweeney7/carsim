@@ -9,7 +9,7 @@ CATEGORY * * Quick Start Guide Example
 TITLE Baseline <* * Quick Start Guide Example>
 
 ! Echo: C:\CarSim_Database\ENPM667_test\Results\Run_6cb07365-85a3-4a3b-95f9-c5c844687601\LastRun_echo.par
-! This run was made 03:09 on November 10, 2023.
+! This run was made 16:25 on November 11, 2023.
 
 !------------------------------------------------------------------------------------
 ! SYSTEM PARAMETERS (SIMULATION OPTIONS)
@@ -91,7 +91,7 @@ TSTART_T_EVENT      0 ; s ! [D] Event clock reset time: T_EVENT = T - TSTART_T_E
 TSTART_WRITE        0 ; s ! Start writing outputs when this time is reached
 TSTEP          0.0005 ; s ! Time step for numerical integration [L]
 ! TSTEP_WRITE   0.025 ; s ! CALC -- Time interval in output time-series file
-TSTOP              10 ; s ! Stop when this time is reached
+TSTOP              20 ; s ! Stop when this time is reached
 ! T_DT         0.0005 ; s ! CALC -- Time increment between calculations
 
 !------------------------------------------------------------------------------------
@@ -798,7 +798,7 @@ SSTART              0 ; m ! Start the vehicle at this station on path PATH_ID_DM
                       ! possibly with target LTARG_ID_DM. The current station on
                       ! this path is the output variable "Station", which is also a
                       ! state variable. [I]
-SSTOP             210 ; m ! Use to set OPT_DIRECTION (if OPT_DIRECTION = 0); stop
+SSTOP             400 ; m ! Use to set OPT_DIRECTION (if OPT_DIRECTION = 0); stop
                       ! when the vehicle reaches this station (if OPT_STOP = 1)
 
 !------------------------------------------------------------------------------------
@@ -926,8 +926,8 @@ MsgObj_1            0 ; - ! Output: User-defined Message (code) for object
 S_RdO_1             0 ; m ! Output: Station of object on road path
 TypeO_1             0 ; - ! Output: User-defined Type (code) for object
 V_Obj_1             0 ; km/h ! Output and possibly ODE SV: Speed of object
-X_Obj_1    8.32369162 ; m ! Output: X coordinate of object 1
-Y_Obj_1  0.3470213299 ; m ! Output: Y coordinate of object 1
+X_Obj_1   15.21841387 ; m ! Output: X coordinate of object 1
+Y_Obj_1   1.164784215 ; m ! Output: Y coordinate of object 1
 YawO_1              0 ; deg ! Output and possibly ODE SV: Yaw angle of object
 
 !------------------------------------------------------------------------------------
@@ -5000,7 +5000,7 @@ RR_SURF_L_CONSTANT(1) 1 ; - ! [D] RR_SURF component due to lateral position
 ! the index ISPEED is used to identify the dataset when reading data.
 
 SPEED_TARGET_ID(1)  1  ! Procedure: DLC @ 120 km/h (Quick Start)
-SPEED_TARGET_CONSTANT(1) 60 ; km/h ! Speed component due to time
+SPEED_TARGET_CONSTANT(1) 110 ; km/h ! Speed component due to time
 SPEED_TARGET_GAIN(1) 1 ! [D] Multiplied with calculated value to get speed
 SPEED_TARGET_OFFSET(1) 0 ; km/h ! [D] Added to get speed
 SPEED_TARGET_COMBINE(1) ADD ! How to combine the two components

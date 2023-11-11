@@ -1,0 +1,52 @@
+PARSFILE
+#FullDataName Models: Simulink`Kinematic MPC Only`Simulink
+#RunMdlFile Simulink\ENPM667_K_MPC_only.slx
+SIMULINK_MODEL_FILE Simulink\ENPM667_K_MPC_only.slx
+#RingCtrl0 -1
+#RingCtrl2 0
+*MULTI_SOLVERS 0
+*MULTI_S_WRAPPER 0
+#CheckBox0 0    
+*USE_ALT_DIR 0
+#CheckBox1 0    
+*USE_DIFF_SOLVERS 0
+#CheckBox3 1    
+#CheckBox5 0    
+#RingCtrl1 0
+OPT_INT_METHOD 0
+#CheckBox4 1    
+OPT_IO_SYNC_FM 1
+*TSTEP 0.0005
+*FREQ_MODEL 2000
+*TSTEP_OUT 0.025
+*FREQ_OUT 40
+tstep 0.0005
+iprint 50
+PARSFILE IO_Channels\Ports\Port_7a8a7924-ff3e-4004-a9e0-769af86b71d2.par
+#BlueLink0 I/O Channels: Ports`Wheel angle` Steering` , Import`Port_7a8a7924-ff3e-4004-a9e0-769af86b71d2
+
+PARSFILE IO_Channels\O_Channels\Export_1a8f3a42-5573-463f-90f0-d54785ae8015.par
+#BlueLink1 I/O Channels: Export`Pos, Vel, Yaw` Vehicle Parameters` , Import/Export`Export_1a8f3a42-5573-463f-90f0-d54785ae8015
+
+#BlueLink3 I/O Channels: Ports` ` , vs_state Ports` , vs_state Ports`
+
+#BlueLink4 I/O Channels: Ports` ` , vs_ctl Ports` , vs_ctl Ports`
+
+#BlueLink5 I/O Channels: Ports` ` , vs_kin Ports` , vs_kin Ports`
+
+#BlueLink6 I/O Channels: Ports` ` , vs_dyn Ports` , vs_dyn Ports`
+
+LIVE_SERVER_UPDATE_FREQ_MAX 60
+
+LOG_ENTRY Used Dataset: Models: Simulink; { Simulink } Kinematic MPC Only
+#Library : Models: Simulink
+#DataSet : Kinematic MPC Only
+#Category: Simulink
+#FileID  : Simlink_af16327f-63cc-43c3-93b3-b27f8e660774
+#Created : 11-11-2023 16:05:15
+#Modified: 11-11-2023 16:05:22
+#Product : CarSim 2023.2
+#DataVer : 2023.2
+#VehCode 
+
+END

@@ -14,8 +14,8 @@ IUNIT 0
 IVEHICLE 0
 OPT_INT_METHOD 0
 OPT_VS_FILETYPE 2
-PARSFILE Models\Simulink\Simlink_5a88dfd3-1363-48df-8bd2-cef1e96a0bee.par
-#BlueLink12 Models: Simulink`Connection 1` Simulink` , Models`Simlink_5a88dfd3-1363-48df-8bd2-cef1e96a0bee
+PARSFILE Models\Simulink\Simlink_af16327f-63cc-43c3-93b3-b27f8e660774.par
+#BlueLink12 Models: Simulink`Kinematic MPC Only` Simulink` , Models`Simlink_af16327f-63cc-43c3-93b3-b27f8e660774
 
 PARSFILE Animator\Cameras\Camera_32ea6678-907c-4a10-af4b-b9431e3d2f8a.par
 #BlueLink0 Animator: Camera Setup`13 Azm, 9 El, 18 m, No Yaw` Vehicle Reference` , Animator camera`Camera_32ea6678-907c-4a10-af4b-b9431e3d2f8a
@@ -80,7 +80,7 @@ LOG_ENTRY Used Dataset: CarSim Run Control; { * * Quick Start Guide Example } Ba
 #DataSet : Baseline
 #Category: * * Quick Start Guide Example
 #FileID  : Run_6cb07365-85a3-4a3b-95f9-c5c844687601
-#Modified: 11-02-2023 19:46:42
+#Modified: 11-11-2023 16:24:22
 #Product : CarSim 2023.2
 #DataVer : 2023.2
 #VehCode Run
