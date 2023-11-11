@@ -1,36 +1,36 @@
-2023-11-11T17:06:11 Logfile initialized.
-2023-11-11T17:06:11 (Info):    CarSim 2023.2
-2023-11-11T17:06:11 (Info):    -
-2023-11-11T17:06:11 (Info):    command-line: 
-2023-11-11T17:06:11 (Info):    -
-2023-11-11T17:06:11 (Info):    Working Dir: C:\CarSim_Database\ENPM667_test\
-2023-11-11T17:06:11 (Info):    Program Dir: C:\Program Files (x86)\CarSim2023.2_Prog\
-2023-11-11T17:06:11 (Info):    -
-2023-11-11T17:06:11 (Info):    OS Version:        6.2 (build 9200)
-2023-11-11T17:06:11 (Info):    CPU Architecture:  x64
-2023-11-11T17:06:11 (Info):    CPU Count:         8
-2023-11-11T17:06:11 (Info):    CPU Level/Rev:     6/15363
-2023-11-11T17:06:11 (Info):    Start Mem Total:   8122 MB
-2023-11-11T17:06:11 (Info):    Start Mem Used:    33%
-2023-11-11T17:06:11 (Info):    -
-2023-11-11T17:06:11 (Info):    Loaded dataset index cache in 0.00s, 0.6 megabytes.
-2023-11-11T17:06:12 (Info):    Feature                  Source                       Version  Acquired  Count
-2023-11-11T17:06:12 (Info):    -----------------        -----------------            -------  --------  -----
-2023-11-11T17:06:12 (Info):    carsimus                 C:\FLEXlm                    2023     [   ]          
-2023-11-11T17:06:12 (Info):    carsimfus                C:\FLEXlm                    2023     [   ]          
-2023-11-11T17:06:12 (Info):    carsimsguius             C:\FLEXlm                    2023     [   ]          
-2023-11-11T17:06:13 (Info):    Acquired [1] license for carsimsguius
-2023-11-11T17:06:13 (Info):    Acquired [1] license for carsimus
-2023-11-11T17:06:13 (Info):    Acquired [1] license for carsimfus
-2023-11-11T17:06:13 (Info):    License check took 1.50 seconds.
-2023-11-11T17:06:13 (Info):    No install ID found at regkey "Software\Mechanical Simulation Corp\CarSim 2023.2".
-2023-11-11T17:06:13 (Info):    No install ID found at regkey "Software\Mechanical Simulation Corp\CarSim 2023.2".
-2023-11-11T17:06:19 (Info):    Initial setup took 6.05 seconds.
-2023-11-11T17:06:19 (Info):    Auto updates took 0.00 seconds.
-2023-11-11T17:06:20 (Info):    Loaded last screen in 0.67 seconds.
-2023-11-11T17:06:20 (Info):    Total init time 8.48 seconds.
-2023-11-11T20:21:33 (Info):    128 index cache entries written in 0.031s
-2023-11-11T20:21:33 (Info):    Released [1] license for carsimsguius
-2023-11-11T20:21:33 (Info):    Released [1] license for carsimus
-2023-11-11T20:21:33 (Info):    Released [1] license for carsimfus
-2023-11-11T20:21:33 (Info):    Exiting application...
+2023-11-11T15:26:37 Logfile initialized.
+2023-11-11T15:26:37 (Info):    CarSim 2023.2
+2023-11-11T15:26:37 (Info):    -
+2023-11-11T15:26:37 (Info):    command-line: 
+2023-11-11T15:26:37 (Info):    -
+2023-11-11T15:26:37 (Info):    Working Dir: E:\CarSim\Database\ENPM-667-Project1\carsim\
+2023-11-11T15:26:37 (Info):    Program Dir: E:\CarSim\
+2023-11-11T15:26:37 (Info):    -
+2023-11-11T15:26:37 (Info):    OS Version:        6.2 (build 9200)
+2023-11-11T15:26:37 (Info):    CPU Architecture:  x64
+2023-11-11T15:26:37 (Info):    CPU Count:         20
+2023-11-11T15:26:37 (Info):    CPU Level/Rev:     6/42245
+2023-11-11T15:26:37 (Info):    Start Mem Total:   32687 MB
+2023-11-11T15:26:37 (Info):    Start Mem Used:    32%
+2023-11-11T15:26:37 (Info):    -
+2023-11-11T15:26:37 (Info):    Loaded dataset index cache in 0.00s, 0.6 megabytes.
+2023-11-11T15:26:38 (Info):    Feature                  Source                       Version  Acquired  Count
+2023-11-11T15:26:38 (Info):    -----------------        -----------------            -------  --------  -----
+2023-11-11T15:26:38 (Info):    carsimus                 C:\Users\amrna\Downloads     2023     [   ]          
+2023-11-11T15:26:38 (Info):    carsimfus                C:\Users\amrna\Downloads     2023     [   ]          
+2023-11-11T15:26:38 (Info):    carsimsguius             C:\Users\amrna\Downloads     2023     [   ]          
+2023-11-11T15:26:39 (Info):    Acquired [1] license for carsimsguius
+2023-11-11T15:26:39 (Info):    Acquired [1] license for carsimus
+2023-11-11T15:26:39 (Info):    Acquired [1] license for carsimfus
+2023-11-11T15:26:39 (Info):    License check took 1.48 seconds.
+2023-11-11T15:26:39 (Info):    No install ID found at regkey "Software\Mechanical Simulation Corp\CarSim 2023.2".
+2023-11-11T15:26:39 (Info):    No install ID found at regkey "Software\Mechanical Simulation Corp\CarSim 2023.2".
+2023-11-11T15:26:39 (Info):    Initial setup took 0.45 seconds.
+2023-11-11T15:26:39 (Info):    Auto updates took 0.00 seconds.
+2023-11-11T15:26:39 (Info):    Loaded last screen in 0.09 seconds.
+2023-11-11T15:26:39 (Info):    Total init time 2.16 seconds.
+2023-11-11T15:33:52 (Info):    128 index cache entries written in 0.000s
+2023-11-11T15:33:52 (Info):    Released [1] license for carsimsguius
+2023-11-11T15:33:52 (Info):    Released [1] license for carsimus
+2023-11-11T15:33:52 (Info):    Released [1] license for carsimfus
+2023-11-11T15:33:52 (Info):    Exiting application...
