@@ -9,7 +9,7 @@ CATEGORY * * Quick Start Guide Example
 TITLE Baseline <* * Quick Start Guide Example>
 
 ! Echo: C:\CarSim_Database\ENPM667_test\Results\Run_6cb07365-85a3-4a3b-95f9-c5c844687601\LastRun_echo.par
-! This run was made 16:25 on November 11, 2023.
+! This run was made 18:04 on November 11, 2023.
 
 !------------------------------------------------------------------------------------
 ! SYSTEM PARAMETERS (SIMULATION OPTIONS)
@@ -5664,9 +5664,9 @@ IMPORT IMP_STEER_R1 REPLACE 0 ; deg ! #2. Road wheel R1 steer due to steering
 ! EXPORTED VARIABLES
 !------------------------------------------------------------------------------------
 EXPORT LAT_VEH      0 ! #1. Vehicle lateral distance to path (m)
-EXPORT AVZ          0 ! #2. Yaw rate (body-fixed), vehicle (deg/s)
-EXPORT XO           0 ! #3. X coordinate, vehicle origin (m)
-EXPORT YO           0 ! #4. Y coordinate, vehicle origin (m)
+EXPORT VX         110 ! #2. Long. speed, inst. CG, vehicle (km/h)
+EXPORT VY           0 ! #3. Lat. speed, inst. CG, vehicle (km/h)
+EXPORT VXZ_FWD    110 ! #4. Longitudinal speed in XZ plane (km/h)
 
 
 END

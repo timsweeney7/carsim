@@ -6,9 +6,15 @@ PARSFILE
 
 
 EXPORT Lat_Veh
+EXPORT Vx
+EXPORT Vy
+EXPORT Vxz_Fwd
 #MiscYellow0
-#Number of Selected Channels: 1
+#Number of Selected Channels: 4
 #CHN_NAME: Lat_Veh
+#CHN_NAME: Vx
+#CHN_NAME: Vy
+#CHN_NAME: Vxz_Fwd
 #ENDMYellow
 
 #BlueLink0 CarSim Run Control`Baseline` * * Quick Start Guide Example` , example run`Run_6cb07365-85a3-4a3b-95f9-c5c844687601
@@ -20,7 +26,7 @@ LOG_ENTRY Used Dataset: I/O Channels: Export; { Vehicle Parameters } Pos, Vel, Y
 #Category: Vehicle Parameters
 #FileID  : Export_1a8f3a42-5573-463f-90f0-d54785ae8015
 #Created : 11-02-2023 21:22:36
-#Modified: 11-11-2023 16:42:31
+#Modified: 11-11-2023 17:58:25
 #Product : CarSim 2023.2
 #DataVer : 2023.2
 #VehCode Export Channels

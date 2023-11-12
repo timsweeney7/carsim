@@ -23,9 +23,9 @@ IUNIT 0
 IVEHICLE 0
 OPT_INT_METHOD 0
 OPT_VS_FILETYPE 2
-ENTER_PARSFILE Models\Simulink\Simlink_af16327f-63cc-43c3-93b3-b27f8e660774.par
-#FullDataName Models: Simulink`Kinematic MPC Only`Simulink
-SIMULINK_MODEL_FILE Simulink\ENPM667_K_MPC_only.slx
+ENTER_PARSFILE Models\Simulink\Simlink_a802f9b2-934f-4666-8063-c8f9c7816d6e.par
+#FullDataName Models: Simulink`PID Only`Simulink
+SIMULINK_MODEL_FILE Simulink\ENPM667_PID_only.slx
 OPT_INT_METHOD 0
 OPT_IO_SYNC_FM 1
 tstep 0.0005
@@ -53,8 +53,8 @@ LOG_ENTRY Used Dataset: I/O Channels: Export; { Vehicle Parameters } Pos, Vel, Y
 EXIT_PARSFILE IO_Channels\O_Channels\Export_1a8f3a42-5573-463f-90f0-d54785ae8015.par
 
 LIVE_SERVER_UPDATE_FREQ_MAX 60
-LOG_ENTRY Used Dataset: Models: Simulink; { Simulink } Kinematic MPC Only
-EXIT_PARSFILE Models\Simulink\Simlink_af16327f-63cc-43c3-93b3-b27f8e660774.par
+LOG_ENTRY Used Dataset: Models: Simulink; { Simulink } PID Only
+EXIT_PARSFILE Models\Simulink\Simlink_a802f9b2-934f-4666-8063-c8f9c7816d6e.par
 
 ENTER_PARSFILE Animator\Cameras\Camera_32ea6678-907c-4a10-af4b-b9431e3d2f8a.par
 #FullDataName Animator: Camera Setup`13 Azm, 9 El, 18 m, No Yaw`Vehicle Reference
@@ -5354,7 +5354,7 @@ ROAD_ID_OBJ 0
 OPT_RECYCLE_OBJ 0
 H_OBJ = 0 ! Default for blank field
 WRITE_ADD_REFERENCE_FRAME_OBJECT
-ADD_REFERENCE_FRAME object_1f
+ADD_REFERENCE_FRAME object_1d
 SET_EULER_ANGLES YAW_PITCH_ROLL
 SET_X_NAME X_Obj_1
 WRT_X_Obj_1
@@ -5410,9 +5410,9 @@ EXIT_PARSFILE Runs\Run_6cb07365-85a3-4a3b-95f9-c5c844687601.par
 IMPORT IMP_STEER_L1 Replace 0.0 ! 1
 IMPORT IMP_STEER_R1 Replace 0.0 ! 1
 EXPORT Lat_Veh
-EXPORT AVz
-EXPORT Xo
-EXPORT Yo
+EXPORT Vx
+EXPORT Vy
+EXPORT Vxz_Fwd
 PORTS_IMP 2,1,1
 PORTS_EXP 1,4
 

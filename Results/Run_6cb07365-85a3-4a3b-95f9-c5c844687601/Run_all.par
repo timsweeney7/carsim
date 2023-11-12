@@ -47,10 +47,10 @@ EXIT_PARSFILE IO_Channels\I_Channels\Import_7d00410e-73fd-4e40-bf60-0eefee908ba2
 LOG_ENTRY Used Dataset: I/O Channels: Ports; { Steering } Wheel angle
 EXIT_PARSFILE IO_Channels\Ports\Port_7a8a7924-ff3e-4004-a9e0-769af86b71d2.par
 
-ENTER_PARSFILE IO_Channels\O_Channels\Export_1a8f3a42-5573-463f-90f0-d54785ae8015.par
-#FullDataName I/O Channels: Export`Pos, Vel, Yaw`Vehicle Parameters
-LOG_ENTRY Used Dataset: I/O Channels: Export; { Vehicle Parameters } Pos, Vel, Yaw
-EXIT_PARSFILE IO_Channels\O_Channels\Export_1a8f3a42-5573-463f-90f0-d54785ae8015.par
+ENTER_PARSFILE IO_Channels\O_Channels\Export_b4c72dc3-b222-4641-97de-fa2151a501a6.par
+#FullDataName I/O Channels: Export`Pos, Vel, Yaw, Lat Err`Vehicle Parameters
+LOG_ENTRY Used Dataset: I/O Channels: Export; { Vehicle Parameters } Pos, Vel, Yaw, Lat Err
+EXIT_PARSFILE IO_Channels\O_Channels\Export_b4c72dc3-b222-4641-97de-fa2151a501a6.par
 
 LIVE_SERVER_UPDATE_FREQ_MAX 60
 LOG_ENTRY Used Dataset: Models: Simulink; { Simulink } Kinematic MPC Only
@@ -5409,12 +5409,16 @@ EXIT_PARSFILE Runs\Run_6cb07365-85a3-4a3b-95f9-c5c844687601.par
 
 IMPORT IMP_STEER_L1 Replace 0.0 ! 1
 IMPORT IMP_STEER_R1 Replace 0.0 ! 1
-EXPORT Lat_Veh
-EXPORT AVz
+EXPORT Yaw
 EXPORT Xo
 EXPORT Yo
+EXPORT Vxz_Fwd
+EXPORT AVz
+EXPORT X_Target
+EXPORT Y_Target
+EXPORT YawO_1
 PORTS_IMP 2,1,1
-PORTS_EXP 1,4
+PORTS_EXP 1,8
 
 
 END
